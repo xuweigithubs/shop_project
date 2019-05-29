@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huawei.dao.ProductMapper" >
+  <resultMap id="BaseResultMap" type="com.huawei.vo.Product" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="productName" property="productname" jdbcType="VARCHAR" />
+    <result column="productDesc1" property="productdesc1" jdbcType="VARCHAR" />
+    <result column="productDesc2" property="productdesc2" jdbcType="VARCHAR" />
+    <result column="weight" property="weight" jdbcType="VARCHAR" />
+    <result column="productOrigin" property="productorigin" jdbcType="VARCHAR" />
+    <result column="productBz" property="productbz" jdbcType="VARCHAR" />
+    <result column="productShape" property="productshape" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="VARCHAR" />
+    <result column="producttypeid" property="producttypeid" jdbcType="VARCHAR" />
+    <result column="brandId" property="brandid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Condition_Where_Clause" >
+    <where >
+      <!--每一个条件用or进行连接-->
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <!--每一个标签执行完成后的开始为括号，结束为括号，中间用and连接-->
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Condition_Where_Clause" >
+    <where >
+      <foreach collection="condition.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    ID, productName, productDesc1, productDesc2, weight, productOrigin, productBz, productShape, 
+    price, producttypeid, brandId
+  </sql>
+  <select id="selectByCondition" resultMap="BaseResultMap" parameterType="com.huawei.vo.ProductCondition" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from tb_product
+    <if test="_parameter != null" >
+      <include refid="Condition_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_product
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_product
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByCondition" parameterType="com.huawei.vo.ProductCondition" >
+    delete from tb_product
+    <if test="_parameter != null" >
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.huawei.vo.Product" >
+    insert into tb_product (ID, productName, productDesc1, 
+      productDesc2, weight, productOrigin, 
+      productBz, productShape, price, 
+      producttypeid, brandId)
+    values (#{id,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, #{productdesc1,jdbcType=VARCHAR}, 
+      #{productdesc2,jdbcType=VARCHAR}, #{weight,jdbcType=VARCHAR}, #{productorigin,jdbcType=VARCHAR}, 
+      #{productbz,jdbcType=VARCHAR}, #{productshape,jdbcType=VARCHAR}, #{price,jdbcType=VARCHAR}, 
+      #{producttypeid,jdbcType=VARCHAR}, #{brandid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.huawei.vo.Product" >
+    insert into tb_product
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="productname != null" >
+        productName,
+      </if>
+      <if test="productdesc1 != null" >
+        productDesc1,
+      </if>
+      <if test="productdesc2 != null" >
+        productDesc2,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="productorigin != null" >
+        productOrigin,
+      </if>
+      <if test="productbz != null" >
+        productBz,
+      </if>
+      <if test="productshape != null" >
+        productShape,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="producttypeid != null" >
+        producttypeid,
+      </if>
+      <if test="brandid != null" >
+        brandId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null" >
+        #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc1 != null" >
+        #{productdesc1,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc2 != null" >
+        #{productdesc2,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="productorigin != null" >
+        #{productorigin,jdbcType=VARCHAR},
+      </if>
+      <if test="productbz != null" >
+        #{productbz,jdbcType=VARCHAR},
+      </if>
+      <if test="productshape != null" >
+        #{productshape,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="producttypeid != null" >
+        #{producttypeid,jdbcType=VARCHAR},
+      </if>
+      <if test="brandid != null" >
+        #{brandid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByCondition" parameterType="com.huawei.vo.ProductCondition" resultType="java.lang.Integer" >
+    select count(*) from tb_product
+    <if test="_parameter != null" >
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByConditionSelective" parameterType="map" >
+    update tb_product
+    <set >
+      <if test="record.id != null" >
+        ID = #{record.id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productname != null" >
+        productName = #{record.productname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productdesc1 != null" >
+        productDesc1 = #{record.productdesc1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productdesc2 != null" >
+        productDesc2 = #{record.productdesc2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.weight != null" >
+        weight = #{record.weight,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productorigin != null" >
+        productOrigin = #{record.productorigin,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productbz != null" >
+        productBz = #{record.productbz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productshape != null" >
+        productShape = #{record.productshape,jdbcType=VARCHAR},
+      </if>
+      <if test="record.price != null" >
+        price = #{record.price,jdbcType=VARCHAR},
+      </if>
+      <if test="record.producttypeid != null" >
+        producttypeid = #{record.producttypeid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.brandid != null" >
+        brandId = #{record.brandid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Condition_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByCondition" parameterType="map" >
+    update tb_product
+    set ID = #{record.id,jdbcType=VARCHAR},
+      productName = #{record.productname,jdbcType=VARCHAR},
+      productDesc1 = #{record.productdesc1,jdbcType=VARCHAR},
+      productDesc2 = #{record.productdesc2,jdbcType=VARCHAR},
+      weight = #{record.weight,jdbcType=VARCHAR},
+      productOrigin = #{record.productorigin,jdbcType=VARCHAR},
+      productBz = #{record.productbz,jdbcType=VARCHAR},
+      productShape = #{record.productshape,jdbcType=VARCHAR},
+      price = #{record.price,jdbcType=VARCHAR},
+      producttypeid = #{record.producttypeid,jdbcType=VARCHAR},
+      brandId = #{record.brandid,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Condition_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.huawei.vo.Product" >
+    update tb_product
+    <set >
+      <if test="productname != null" >
+        productName = #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc1 != null" >
+        productDesc1 = #{productdesc1,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc2 != null" >
+        productDesc2 = #{productdesc2,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="productorigin != null" >
+        productOrigin = #{productorigin,jdbcType=VARCHAR},
+      </if>
+      <if test="productbz != null" >
+        productBz = #{productbz,jdbcType=VARCHAR},
+      </if>
+      <if test="productshape != null" >
+        productShape = #{productshape,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="producttypeid != null" >
+        producttypeid = #{producttypeid,jdbcType=VARCHAR},
+      </if>
+      <if test="brandid != null" >
+        brandId = #{brandid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.huawei.vo.Product" >
+    update tb_product
+    set productName = #{productname,jdbcType=VARCHAR},
+      productDesc1 = #{productdesc1,jdbcType=VARCHAR},
+      productDesc2 = #{productdesc2,jdbcType=VARCHAR},
+      weight = #{weight,jdbcType=VARCHAR},
+      productOrigin = #{productorigin,jdbcType=VARCHAR},
+      productBz = #{productbz,jdbcType=VARCHAR},
+      productShape = #{productshape,jdbcType=VARCHAR},
+      price = #{price,jdbcType=VARCHAR},
+      producttypeid = #{producttypeid,jdbcType=VARCHAR},
+      brandId = #{brandid,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

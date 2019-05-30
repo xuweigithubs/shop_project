@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29988b34-b029-44f2-97dc-33f9921435c0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/ProductControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shop_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/UsertableMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/UsertableCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/usertable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/mapping/UsertableMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="29988b34-b029-44f2-97dc-33f9921435c0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/shop_portal/target/" />
@@ -34,7 +18,20 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="ProductMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -662,7 +659,7 @@
       <updated>1558975173322</updated>
       <workItem from="1558975178638" duration="6520000" />
       <workItem from="1559059908511" duration="17754000" />
-      <workItem from="1559148862225" duration="7208000" />
+      <workItem from="1559148862225" duration="7524000" />
     </task>
     <task id="LOCAL-00001" summary="SpringBoot项目初始提交">
       <created>1559149034349</created>
@@ -678,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559230129007</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SpringBoot项目初始提交">
+      <created>1559233071473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559233071473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -714,7 +718,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31482000" />
+    <option name="totallyTimeSpent" value="31798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,6 +731,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5006748" side_tool="true" weight="0.36585367" />
@@ -1053,16 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1117,6 +1112,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1067#1068#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java" line="13" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java" line="13" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29988b34-b029-44f2-97dc-33f9921435c0" name="Default" comment="" />
+    <list default="true" id="29988b34-b029-44f2-97dc-33f9921435c0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shop_project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/shop_portal/target/" />
@@ -23,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="14" column="37" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="55">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,42 +39,10 @@
         </entry>
       </file>
       <file leaf-file-name="IProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
+        <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="600">
+              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,34 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java">
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="173">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#1538#1539#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,9 +73,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -138,6 +95,9 @@
     <dirStrings>
       <dir>D:\m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../shop_project" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,6 +134,8 @@
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/usertable.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" />
+        <option value="$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -205,11 +167,14 @@
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -431,14 +396,18 @@
             <path>
               <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -672,13 +641,19 @@
       <updated>1558975173322</updated>
       <workItem from="1558975178638" duration="6520000" />
       <workItem from="1559059908511" duration="17754000" />
+      <workItem from="1559148862225" duration="4244000" />
     </task>
+    <task id="LOCAL-00001" summary="SpringBoot项目初始提交">
+      <created>1559149034349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559149034349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserControllerTest_getAllUsers - 2019.05.30 at 00h 35m 51s.xml">
-      <configuration name="UserControllerTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserControllerTest_getAllUsers - 2019.05.30 at 00h 36m 36s.xml">
       <configuration name="UserControllerTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
@@ -706,9 +681,12 @@
     <history-entry file="UserServiceImplTest_findAllUser - 2019.05.30 at 00h 51m 43s.xml">
       <configuration name="UserServiceImplTest.findAllUser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceImplTest_findAllUser - 2019.05.30 at 23h 11m 42s.xml">
+      <configuration name="UserServiceImplTest.findAllUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24274000" />
+    <option name="totallyTimeSpent" value="28518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,14 +718,13 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" weight="0.3292683" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="13" weight="0.16768293" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.23018293" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.22103658" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3246951" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.32321188" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30094466" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3292683" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -755,6 +732,7 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3292683" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -763,9 +741,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SpringBoot项目初始提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot项目初始提交" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -773,15 +755,73 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/resources/mapping/usertableMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/App.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/resources/mapping/usertableMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/App.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
@@ -809,51 +849,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/com/huawei/vo/usertableExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/com/huawei/vo/usertable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/com/huawei/dao/usertableMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/resources/mapping/usertableMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_back/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_back/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/com/huawei/vo/usertableExample.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/com/huawei/vo/usertable.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/com/huawei/dao/usertableMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/resources/mapping/usertableMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_back/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_back/src/main/resources/application.properties" />
     <entry file="jar://D:/m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -868,80 +869,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/mapping/UsertableMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/mapping/UsertableMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/resources/mapping/ProductVOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2550">
-          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/com/huawei/dao/ProductVOMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/mapping/ProductVOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2275">
-          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/ProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2837">
-          <caret line="343" column="7" lean-forward="true" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductVOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/generator/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/resources/mapping/ProductVOMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/com/huawei/dao/ProductVOMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/mapping/ProductVOMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/ProductVO.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductVOMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/generator/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/resources/mapping/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/com/huawei/dao/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/resources/mapping/ProductMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/com/huawei/dao/ProductMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="168" column="6" lean-forward="true" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/UsertableCondition.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/UsertableCondition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="261" column="14" selection-start-line="261" selection-start-column="8" selection-end-line="261" selection-end-column="14" />
@@ -953,20 +916,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/UsertableMapper.java">
+    <entry file="jar://D:/m2/repository/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="125">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/usertable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/ProductApplication.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/src/site/xdoc/xdoc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="225">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/src/site/fr/xdoc/xdoc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/ProductApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#568#569#0" expanded="true" />
@@ -975,10 +974,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/ProductCondition.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/ProductCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="-177">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
@@ -995,67 +994,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/mapping/ProductMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m2/repository/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/resources/mapping/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        <state relative-caret-position="175">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="18" />
@@ -1065,30 +1018,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/usertable.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+        <state relative-caret-position="250">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="249">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/UsertableMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state relative-caret-position="-25">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-625">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop_project/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
           </folding>
         </state>
       </provider>

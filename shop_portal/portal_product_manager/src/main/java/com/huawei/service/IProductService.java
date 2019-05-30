@@ -23,5 +23,4 @@ public interface IProductService {
      * 删除商品
      */
     void deleteProduct(Product product);
-
 }

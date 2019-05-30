@@ -14,8 +14,8 @@ logging:
        com.huawei.dao : debug
 swagger:
    enabled : true
-   title : spring-boot
-   description : Starter for swagger 2.x
+   title : 网上商城接口
+   description :  网上商城接口说明
    license : Apache License, Version 2.0
    licenseUrl : https://www.apache.org/licenses/LICENSE-2.0.html
    termsOfServiceUrl : https://github.com/dyc87112/spring-boot-starter-swagger

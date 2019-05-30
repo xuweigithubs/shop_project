@@ -1,5 +1,6 @@
 package com.huawei;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Controller;
 @Configuration
 @MapperScan("com.huawei.dao")
 @ComponentScan(basePackages = {"com.huawei.*"})
+@EnableSwagger2Doc
 public class ProductApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProductApplication.class, args);

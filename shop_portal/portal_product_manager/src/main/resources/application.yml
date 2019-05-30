@@ -12,3 +12,17 @@ mybatis:
 logging:
     level:
        com.huawei.dao : debug
+swagger:
+   enabled : true
+   title : spring-boot
+   description : Starter for swagger 2.x
+   license : Apache License, Version 2.0
+   licenseUrl : https://www.apache.org/licenses/LICENSE-2.0.html
+   termsOfServiceUrl : https://github.com/dyc87112/spring-boot-starter-swagger
+   base-package : com.huawei.controller
+   base-path : /**
+   exclude-path : /error, /ops/**
+   contact :
+      name : 胥伟
+      url : https://www.jianshu.com/u/822585e5c69a
+      email : 1101516243@qq.com

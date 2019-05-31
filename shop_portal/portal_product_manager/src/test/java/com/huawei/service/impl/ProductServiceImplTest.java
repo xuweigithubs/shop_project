@@ -26,6 +26,17 @@ public class ProductServiceImplTest {
 
     @Test
     public void addProduct() {
+        Product product=new Product();
+        product.setProductname("XXX");
+        product.setBrandid("1");
+        product.setPrice("100.4");
+        product.setProductbz("这是一个很好的商品");
+        product.setProductdesc1("放置在常温下");
+        product.setProductdesc2("放置在常温下");
+        product.setProductorigin("广东深圳");
+        product.setProductshape("铁塔型");
+        product.setWeight("100");
+        productService.addProduct(product);
     }
 
     @Test

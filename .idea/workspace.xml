@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29988b34-b029-44f2-97dc-33f9921435c0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,17 +23,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java">
+      <file leaf-file-name="IdGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+            <state relative-caret-position="19">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-                <element signature="e#1603#1604#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-616">
+              <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/ProductApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,7 +135,6 @@
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IProductService.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/ProductControllerTest.java" />
-        <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/Swagger2.java" />
@@ -119,8 +147,9 @@
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/pom.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java" />
         <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java" />
       </list>
     </option>
   </component>
@@ -249,6 +278,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huawei" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huawei" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,6 +328,81 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huawei" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huawei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huawei" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huawei" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="portal_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huawei" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.huawei.ProductApplication" />
       <module name="portal_product_manager" />
@@ -369,6 +485,29 @@
       <option name="PACKAGE_NAME" value="com.huawei.controller" />
       <option name="MAIN_CLASS_NAME" value="com.huawei.controller.ProductControllerTest" />
       <option name="METHOD_NAME" value="selectProductByCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProductServiceImplTest.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal_product_manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huawei.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.huawei.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.huawei.service.impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="addProduct" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -505,9 +644,11 @@
       <item itemvalue="Application.HelloApplication" />
       <item itemvalue="JUnit.ProductServiceImplTest.selectProductByCondition" />
       <item itemvalue="JUnit.ProductControllerTest.selectProductByCondition" />
+      <item itemvalue="JUnit.ProductServiceImplTest.addProduct" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceImplTest.addProduct" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.ProductControllerTest.selectProductByCondition" />
         <item itemvalue="JUnit.ProductServiceImplTest.selectProductByCondition" />
@@ -528,7 +669,7 @@
       <workItem from="1559059908511" duration="17754000" />
       <workItem from="1559148862225" duration="13488000" />
       <workItem from="1559239697296" duration="2497000" />
-      <workItem from="1559311670573" duration="1523000" />
+      <workItem from="1559311670573" duration="3312000" />
     </task>
     <task id="LOCAL-00001" summary="SpringBoot项目初始提交">
       <created>1559149034349</created>
@@ -572,13 +713,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559241973591</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="SpringBoot项目初始提交">
+      <created>1559313253419</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559313253419</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductServiceImplTest_selectProductByCondition - 2019.05.30 at 23h 40m 43s.xml">
-      <configuration name="ProductServiceImplTest.selectProductByCondition" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductControllerTest_selectProductByCondition - 2019.05.31 at 00h 07m 54s.xml">
       <configuration name="ProductControllerTest.selectProductByCondition" configurationId="JUnit" />
     </history-entry>
@@ -606,9 +751,12 @@
     <history-entry file="ProductControllerTest_selectProductByCondition - 2019.05.31 at 01h 48m 06s.xml">
       <configuration name="ProductControllerTest.selectProductByCondition" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductServiceImplTest_addProduct - 2019.05.31 at 22h 37m 59s.xml">
+      <configuration name="ProductServiceImplTest.addProduct" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41782000" />
+    <option name="totallyTimeSpent" value="43571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,10 +789,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" weight="0.3292683" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.25304878" />
+      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.21341464" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.22103658" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3246951" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.27732792" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29149798" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info id="Web" order="0" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -740,23 +888,9 @@
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/UserServiceImplTest.java" />
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/IUserService.java" />
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/mapping/UsertableMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-294" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/ProductControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/generator/generatorConfig.xml">
@@ -851,25 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/ProductApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-550">
@@ -884,26 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -914,6 +1009,67 @@
             <element signature="e#1424#1425#0" expanded="true" />
             <element signature="e#1538#1539#0" expanded="true" />
             <element signature="e#1603#1604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/service/impl/ProductServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/test/java/com/huawei/controller/ProductControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/ProductApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/utils/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

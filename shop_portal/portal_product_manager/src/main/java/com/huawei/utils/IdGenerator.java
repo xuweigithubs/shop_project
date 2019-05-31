@@ -43,11 +43,9 @@ public enum IdGenerator {
 		}
 		lastTimestamp = timestamp;
 
-		long suffix = (datacenterId << datacenterIdShift) | (workerId << workerIdShift) | sequence;
-
 		String datePrefix = DateFormatUtils.format(timestamp, "yyyyMMddHHMMssSSS");
 
-		return datePrefix + suffix;
+		return datePrefix;
 	}
 
 	protected long tilNextMillis(long lastTimestamp) {

@@ -17,10 +17,24 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private IProductService productService;
+
+    /**
+     * 获取商品列表
+     * @param product
+     * @return
+     */
     @RequestMapping(value = "/selectProductByCondition", method = RequestMethod.POST)
     @ApiOperation(notes = "获取商品信息", value = "get product info")
     public List selectProductByCondition(Product product){
         List list =  productService.selectProductByCondition(product);
         return list;
+    }
+    /**
+     * 添加商品
+     */
+    @RequestMapping(value = "/addProduct", method = RequestMethod.POST)
+    @ApiOperation(notes = "获取商品信息", value = "get product info")
+    public void addProduct(Product product){
+        productService.addProduct(product);
     }
 }

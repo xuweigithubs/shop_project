@@ -2,6 +2,7 @@ package com.huawei.service.impl;
 
 import com.huawei.dao.ProductMapper;
 import com.huawei.service.IProductService;
+import com.huawei.utils.IdGenerator;
 import com.huawei.vo.Product;
 import com.huawei.vo.ProductCondition;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,7 @@ public class ProductServiceImpl implements IProductService {
      */
     @Override
     public void addProduct(Product product) {
+        product.setId(IdGenerator.INSTANCE.nextId());
         productMapper.insertSelective(product);
     }
 

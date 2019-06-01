@@ -41,9 +41,24 @@ public class ProductServiceImplTest {
 
     @Test
     public void updateProduct() {
+        Product product=new Product();
+        product.setId("20190601230610347");
+        product.setProductname("修改后的商品");
+        product.setBrandid("1");
+        product.setPrice("100.4");
+        product.setProductbz("这是一个很好的商品");
+        product.setProductdesc1("放置在常温下");
+        product.setProductdesc2("放置在常温下");
+        product.setProductorigin("广东深圳");
+        product.setProductshape("铁塔型");
+        product.setWeight("100");
+        productService.updateProduct(product);
     }
 
     @Test
     public void deleteProduct() {
+        Product product=new Product();
+        product.setId("20190601230610347");
+        productService.deleteProduct(product);
     }
 }

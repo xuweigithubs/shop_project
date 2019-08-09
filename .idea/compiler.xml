@@ -7,13 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="portal_product_manager" />
-        <module name="product_manager_back" />
+        <module name="portal_product_map" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="back_product_manager" target="1.8" />
-      <module name="product_manager_back" target="1.8" />
-      <module name="shop_back" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

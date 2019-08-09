@@ -5,12 +5,13 @@ import com.huawei.vo.Product;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@CrossOrigin
 @RestController
 @RequestMapping(value = {"/product"})
 @Api(value = "商品模块")
@@ -37,4 +38,21 @@ public class ProductController {
     public void addProduct(Product product){
         productService.addProduct(product);
     }
+    /**
+     * 修改商品
+     */
+    @RequestMapping(value = "/deleteProduct", method = RequestMethod.POST)
+    @ApiOperation(notes = "删除单个商品", value = "get product info")
+    public void deleteProduct(Product product){
+        productService.deleteProduct(product);
+    }
+    /**
+     * 删除商品
+     */
+    @RequestMapping(value = "/updateProduct", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改单个商品", value = "get product info")
+    public void updateProduct(Product product){
+        productService.updateProduct(product);
+    }
+
 }

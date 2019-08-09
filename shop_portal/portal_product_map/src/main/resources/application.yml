@@ -1,8 +1,8 @@
 server:
-  port: 8088
+  port: 8089
 spring:
     datasource:
-        url: jdbc:mysql://localhost:3306/crm?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+        url: jdbc:mysql://localhost:3306/product_map?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
         username: root
         password: root
         driver-class-name: com.mysql.jdbc.Driver
@@ -14,8 +14,8 @@ logging:
        com.huawei.dao : debug
 swagger:
    enabled : true
-   title : 网上商城接口
-   description :  网上商城接口说明
+   title : 地图接口
+   description :  地图接口说明
    license : Apache License, Version 2.0
    licenseUrl : https://www.apache.org/licenses/LICENSE-2.0.html
    termsOfServiceUrl : https://github.com/dyc87112/spring-boot-starter-swagger

@@ -10,8 +10,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>portal_product_manager</artifactId>
-    <name>portal_product_manager</name>
+    <artifactId>admin_product_manager</artifactId>
+    <name>admin_product_manager</name>
     <url>http://www.example.com</url>
 
     <properties>

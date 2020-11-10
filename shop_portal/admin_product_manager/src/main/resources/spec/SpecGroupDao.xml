@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.spec.group.dao.SpecGroupDao" >
+    <resultMap id="BaseResultMap" type="manager.spec.group.vo.SpecGroupVO" >
+        <id column="id" property="id" jdbcType="VARCHAR" />
+        <id column="cid" property="cid" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
+        select id, cid, name
+        from tb_spec_group
+        <if test="name!=null">
+            <where>
+                name=#{name,jdbcType=VARCHAR}
+            </where>
+        </if>
+    </select>
+</mapper>

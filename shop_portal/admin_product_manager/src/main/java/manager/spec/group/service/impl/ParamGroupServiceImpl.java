@@ -1,4 +1,5 @@
 package manager.spec.group.service.impl;
+import manager.common.PageView;
 import manager.spec.group.dao.SpecGroupDao;
 import manager.spec.group.service.ParamGroupService;
 import manager.spec.group.vo.SpecGroupVO;
@@ -10,8 +11,11 @@ public class ParamGroupServiceImpl implements ParamGroupService {
     @Autowired
     private SpecGroupDao specGroupDao;
     //获取规格参数组
-    public List<SpecGroupVO> selectByCondition(SpecGroupVO specGroupVO){
-        return specGroupDao.selectByCondition(specGroupVO);
+    public PageView<List<SpecGroupVO>> selectByCondition(SpecGroupVO specGroupVO){
+        PageView<List<SpecGroupVO>> pageView=new PageView<List<SpecGroupVO>>();
+        pageView.setRows(specGroupDao.selectByCondition(specGroupVO));
+        pageView.setTotal(specGroupDao.selectByConditionCount(specGroupVO));
+        return pageView;
     }
     //添加参数组
     @Override

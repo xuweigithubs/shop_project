@@ -9,9 +9,19 @@
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select id, cid, name
         from tb_spec_group
-        <if test="name!=null">
+        <if test="name!=''">
             <where>
-                name=#{name,jdbcType=VARCHAR}
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+        limit #{pager.startIndex},#{pager.endIndex}
+    </select>
+    <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.group.vo.SpecGroupVO" >
+        select count(1)
+        from tb_spec_group
+        <if test="name!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
             </where>
         </if>
     </select>

@@ -20,13 +20,10 @@ import java.util.List;
 public class ParamGroupController {
     @Autowired
     private ParamGroupService paramGroupService;
-    @RequestMapping(value = "/spec/group/page/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/spec/group/page/list", method = RequestMethod.POST)
     @ApiOperation(notes = "根据名称分页获取参数组信息", value = "get param group info")
-    public PageView<List<SpecGroupVO>> selectByCondition(Pager pager, SpecGroupVO specGroupVO){
-        PageView<List<SpecGroupVO>> pageView=new PageView<List<SpecGroupVO>>();
-        pageView.setRows(paramGroupService.selectByCondition(specGroupVO));
-        pageView.setTotal(100);
-        return pageView;
+    public PageView<List<SpecGroupVO>> selectByCondition(@RequestBody SpecGroupVO specGroupVO){
+        return paramGroupService.selectByCondition(specGroupVO);
     }
     //添加参数分组
     @RequestMapping(value = "/spec/group/add", method = RequestMethod.POST)

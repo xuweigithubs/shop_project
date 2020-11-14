@@ -15,4 +15,19 @@
             </where>
         </if>
     </select>
+    <insert id="addSpecGroup" parameterType="manager.spec.group.vo.SpecGroupVO" >
+        insert into tb_spec_group(cid, name) values(#{cid}, #{name})
+    </insert>
+    <!--修改参数组-->
+    <update id="updateSpecGroup" parameterType="manager.spec.group.vo.SpecGroupVO" >
+        update tb_spec_group t set t.name=#{name},t.cid=#{cid} where t.id=#{id}
+    </update>
+    <!--删除参数组-->
+    <delete id="deleteSpecGroup" parameterType="int">
+        delete from tb_spec_group
+        where id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

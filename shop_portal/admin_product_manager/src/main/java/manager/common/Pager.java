@@ -29,16 +29,13 @@ public class Pager{
 		startIndex=(currentPage-1)*pageSize;
 		return startIndex;
 	}
-
 	public void setStartIndex(Integer startIndex) {
 		this.startIndex = startIndex;
 	}
-
 	public Integer getEndIndex() {
 		endIndex=currentPage*pageSize;
 		return endIndex;
 	}
-
 	public void setEndIndex(Integer endIndex) {
 		this.endIndex = endIndex;
 	}

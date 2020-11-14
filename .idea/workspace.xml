@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bd8d9c-04a6-4f6a-bf48-430a3093560c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/spec/SpecGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/spec/SpecGroupDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/shop_portal/portal_product_manager/target/" />
@@ -32,10 +29,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="350">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#657#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,17 +87,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="200">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="175">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -124,15 +164,16 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/pom.xml" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/ProductManagerApplication.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Constants.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/spec/SpecGroupDao.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java" />
       </list>
     </option>
   </component>
@@ -236,6 +277,71 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -456,7 +562,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.2707775" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.2580429" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.2855228" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,12 +573,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.41788855" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15249267" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3548387" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.06304985" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991204" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
@@ -691,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/portal/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -729,49 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,17 +852,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="200">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>

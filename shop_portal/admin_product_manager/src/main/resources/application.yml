@@ -8,7 +8,7 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
 mybatis:
   mapper-locations: classpath:manager/**/*Dao.xml
-  type-aliases-package: manager.spec.group.vo
+  type-aliases-package: manager
 logging:
     level:
-      manager.spec.group.dao: debug
+      manager: debug

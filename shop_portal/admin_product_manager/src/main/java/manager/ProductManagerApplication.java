@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 @SpringBootApplication
 @Configuration
-@MapperScan("manager.*.*.dao")
+@MapperScan("manager.**.dao")
 @ComponentScan(basePackages = {"manager.*"})
 public class ProductManagerApplication {
     public static void main(String[] args) {

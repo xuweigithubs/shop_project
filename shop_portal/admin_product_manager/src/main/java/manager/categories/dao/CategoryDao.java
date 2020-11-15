@@ -1,5 +1,5 @@
-package manager.catagories.dao;
-import manager.catagories.vo.CategoryVO;
+package manager.categories.dao;
+import manager.categories.vo.CategoryVO;
 import java.util.List;
 public interface CategoryDao {
     //根据名称搜索参数组

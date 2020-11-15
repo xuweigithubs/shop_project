@@ -1,14 +1,10 @@
-package manager.catagories.service;
-
-import manager.catagories.vo.CategoryVO;
-import manager.common.PageView;
-import manager.spec.group.vo.SpecGroupVO;
-
+package manager.categories.service;
+import manager.categories.vo.CategoryVO;
 import java.util.List;
 
 public interface CategoryService {
     //获取商品分类信息
-    public PageView<List<CategoryVO>> selectByCondition(CategoryVO categoryVO);
+    public List<CategoryVO> selectByCondition(CategoryVO categoryVO);
     //添加商品分类信息
     public void  addCategory(CategoryVO categoryVO);
     //根据ID修改商品分类

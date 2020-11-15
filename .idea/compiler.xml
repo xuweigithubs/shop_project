@@ -10,8 +10,5 @@
         <module name="portal_product_manager" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="portal_product_map" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

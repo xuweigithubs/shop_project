@@ -7,7 +7,7 @@ spring:
         password: root
         driver-class-name: com.mysql.jdbc.Driver
 mybatis:
-  mapper-locations: classpath*:spec/*.xml
+  mapper-locations: classpath:manager/**/*Dao.xml
   type-aliases-package: manager.spec.group.vo
 logging:
     level:

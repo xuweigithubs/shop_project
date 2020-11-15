@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.catagories.dao.CategoryDao" >
+    <resultMap id="BaseResultMap" type="manager.catagories.vo.CategoryVO" >
+        <id column="id" property="id" jdbcType="VARCHAR" />
+        <result column="parent_id" property="parentId" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="is_parent" property="isParent" jdbcType="BOOLEAN" />
+        <result column="sort" property="sort" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.catagories.vo.CategoryVO" >
+        select id, parent_id, name,is_parent,sort
+        from tb_category
+        <if test="name!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+    </select>
+    <insert id="addCategory" parameterType="manager.catagories.vo.CategoryVO" >
+        insert into tb_category(id, parent_id, name,is_parent,sort) values(#{parent_id}, #{name},#{is_parent},#{sort})
+    </insert>
+    <!--修改参数组-->
+    <update id="updateCategory" parameterType="manager.catagories.vo.CategoryVO" >
+        update tb_category t
+        set t.name=#{name},
+            t.parent_id=#{parentId},
+            t.is_parent=#{isParent},
+            t.sort=#{sort}
+        where t.id=#{id}
+    </update>
+    <!--删除参数组-->
+    <delete id="deleteCategories" parameterType="int">
+        delete from tb_category
+        where id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

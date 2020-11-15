@@ -6,5 +6,4 @@ import lombok.Data;
 public class PageView<T> {
 	private T rows;
 	private Integer total;
-
 }

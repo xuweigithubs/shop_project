@@ -3,7 +3,6 @@ package manager.spec.group.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import manager.common.PageView;
-import manager.common.Pager;
 import manager.spec.group.service.ParamGroupService;
 import manager.spec.group.vo.SpecGroupVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.lang.reflect.Array;
 import java.util.List;
 @RestController
 @RequestMapping(value = {"/manager"})

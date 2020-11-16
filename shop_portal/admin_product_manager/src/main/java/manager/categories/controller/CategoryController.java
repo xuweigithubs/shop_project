@@ -22,4 +22,20 @@ public class CategoryController {
     public List<CategoryVO> selectByCondition(@RequestBody CategoryVO categoryVO){
         return categoryService.selectByCondition(categoryVO);
     }
+    @RequestMapping(value = "/category/add", method = RequestMethod.POST)
+    @ApiOperation(notes = "查询商品分类信息", value = "get categories info")
+    public void addCategory(@RequestBody CategoryVO categoryVO){
+        categoryService.addCategory(categoryVO);
+    }
+    @RequestMapping(value = "/category/update", method = RequestMethod.POST)
+    @ApiOperation(notes = "查询商品分类信息", value = "get categories info")
+    public void updateCategory(@RequestBody CategoryVO categoryVO){
+       categoryService.updateCategory(categoryVO);
+    }
+    @RequestMapping(value = "/category/delete", method = RequestMethod.POST)
+    @ApiOperation(notes = "查询商品分类信息", value = "get categories info")
+    public void deleteCategory(@RequestBody Integer[] ids){
+        categoryService.deleteCategories(ids);
+    }
+
 }

@@ -38,16 +38,16 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void addCategory(CategoryVO categoryVO) {
-
+        categoryDao.addCategory(categoryVO);
     }
 
     @Override
     public void updateCategory(CategoryVO categoryVO) {
-
+        categoryDao.updateCategory(categoryVO);
     }
 
     @Override
     public void deleteCategories(Integer[] ids) {
-
+        categoryDao.deleteCategories(ids);
     }
 }

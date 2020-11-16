@@ -18,13 +18,12 @@
         </if>
     </select>
     <insert id="addCategory" parameterType="manager.categories.vo.CategoryVO" >
-        insert into tb_category(id, parent_id, name,is_parent,sort) values(#{parent_id}, #{name},#{is_parent},#{sort})
+        insert into tb_category(parent_id, name,is_parent,sort) values(#{parentId}, #{name},#{isParent},#{sort})
     </insert>
     <!--修改参数组-->
     <update id="updateCategory" parameterType="manager.categories.vo.CategoryVO" >
         update tb_category t
         set t.name=#{name},
-            t.parent_id=#{parentId},
             t.is_parent=#{isParent},
             t.sort=#{sort}
         where t.id=#{id}

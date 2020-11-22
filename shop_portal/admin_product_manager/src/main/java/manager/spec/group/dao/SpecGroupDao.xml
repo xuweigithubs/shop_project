@@ -13,7 +13,7 @@
         where spec.cid= #{cid}
     </select>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
-        select spec.id as id, category.name as categoryName, spec.name as name
+        select spec.id as id,category.cid as cid,category.name as categoryName, spec.name as name
         from tb_spec_group spec
         left join
         tb_category category on

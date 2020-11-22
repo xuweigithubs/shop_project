@@ -42,6 +42,8 @@ public class ParamGroupController {
         paramGroupService.deleteSpecGroup(ids);
     }
     //批量保存参数组
+    @RequestMapping(value = "/spec/group/addBatch", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改参数组信息", value = "delete param group info")
     public void addBatch(@RequestBody List<SpecGroupVO> paramGroupList){
         paramGroupService.addBatch(paramGroupList);
     }

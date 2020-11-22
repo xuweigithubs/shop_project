@@ -15,4 +15,6 @@ public interface SpecGroupDao {
     void deleteSpecGroup(Integer[] ids);
     //统计查询结果的条数
     Integer selectByConditionCount(SpecGroupVO specGroupVO);
+
+    void addSpecGroupBatch(List<SpecGroupVO> addSpecGroupBatch);
 }

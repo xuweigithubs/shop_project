@@ -34,9 +34,7 @@ public class ParamGroupServiceImpl implements ParamGroupService {
     }
 
     @Override
-    public void addBatch(List<SpecGroupVO> paramGroupList) {
-        System.out.println(paramGroupList);
-        System.out.println(paramGroupList);
-        System.out.println(paramGroupList);
+    public void addBatch(List<SpecGroupVO> addSpecGroupBatch) {
+        specGroupDao.addSpecGroupBatch(addSpecGroupBatch);
     }
 }

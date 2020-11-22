@@ -18,6 +18,7 @@
                 name like concat('%',#{name,jdbcType=VARCHAR},'%')
             </where>
         </if>
+        order by spec.cid
         limit #{pager.startIndex},#{pager.endIndex}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.group.vo.SpecGroupVO" >

@@ -8,6 +8,11 @@
         <result column="categoryName" property="categoryName" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
+        select spec.id as id,spec.name as name
+        from tb_spec_group spec
+        where spec.cid= #{cid}
+    </select>
+    <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select spec.id as id, category.name as categoryName, spec.name as name
         from tb_spec_group spec
         left join

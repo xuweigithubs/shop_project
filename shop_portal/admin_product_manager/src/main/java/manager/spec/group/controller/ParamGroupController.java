@@ -18,9 +18,16 @@ import java.util.List;
 public class ParamGroupController {
     @Autowired
     private ParamGroupService paramGroupService;
+    //分页查询参数组
     @RequestMapping(value = "/spec/group/page/list", method = RequestMethod.POST)
     @ApiOperation(notes = "根据名称分页获取参数组信息", value = "get param group info")
-    public PageView<List<SpecGroupVO>> selectByCondition(@RequestBody SpecGroupVO specGroupVO){
+    public PageView<List<SpecGroupVO>> selectByConditionPage(@RequestBody SpecGroupVO specGroupVO){
+        return paramGroupService.selectByConditionPage(specGroupVO);
+    }
+    //不分页查询参数组
+    @RequestMapping(value = "/spec/group/list", method = RequestMethod.POST)
+    @ApiOperation(notes = "根据名称分页获取参数组信息", value = "get param group info")
+    public List<SpecGroupVO> selectByCondition(@RequestBody SpecGroupVO specGroupVO){
         return paramGroupService.selectByCondition(specGroupVO);
     }
     //添加参数分组

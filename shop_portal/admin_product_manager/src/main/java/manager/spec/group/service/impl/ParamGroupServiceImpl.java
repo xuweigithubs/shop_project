@@ -11,12 +11,18 @@ public class ParamGroupServiceImpl implements ParamGroupService {
     @Autowired
     private SpecGroupDao specGroupDao;
     //获取规格参数组
-    public PageView<List<SpecGroupVO>> selectByCondition(SpecGroupVO specGroupVO){
+    public PageView<List<SpecGroupVO>> selectByConditionPage(SpecGroupVO specGroupVO){
         PageView<List<SpecGroupVO>> pageView=new PageView<List<SpecGroupVO>>();
-        pageView.setRows(specGroupDao.selectByCondition(specGroupVO));
+        pageView.setRows(specGroupDao.selectByConditionPage(specGroupVO));
         pageView.setTotal(specGroupDao.selectByConditionCount(specGroupVO));
         return pageView;
     }
+
+    @Override
+    public List<SpecGroupVO> selectByCondition(SpecGroupVO specGroupVO) {
+        return specGroupDao.selectByConditionPage(specGroupVO);
+    }
+
     //添加参数组
     @Override
     public void addSpecGroup(SpecGroupVO specGroupVO) {

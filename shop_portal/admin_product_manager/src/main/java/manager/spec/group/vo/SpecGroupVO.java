@@ -8,5 +8,6 @@ public class SpecGroupVO {
     private String id;
     private String cid;
     private String name;
+    private String categoryName;
     private Pager pager;
 }

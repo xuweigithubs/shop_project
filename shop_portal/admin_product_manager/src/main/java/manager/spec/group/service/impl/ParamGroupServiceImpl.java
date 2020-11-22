@@ -32,4 +32,11 @@ public class ParamGroupServiceImpl implements ParamGroupService {
     public void deleteSpecGroup(Integer[] ids) {
         specGroupDao.deleteSpecGroup(ids);
     }
+
+    @Override
+    public void addBatch(List<SpecGroupVO> paramGroupList) {
+        System.out.println(paramGroupList);
+        System.out.println(paramGroupList);
+        System.out.println(paramGroupList);
+    }
 }

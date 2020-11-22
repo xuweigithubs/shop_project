@@ -14,4 +14,6 @@ public interface ParamGroupService {
     public void updateSpecGroup(SpecGroupVO specGroupVO);
     //删除参数组
     public void deleteSpecGroup(Integer[] ids);
+
+    void addBatch(List<SpecGroupVO> paramGroupList);
 }

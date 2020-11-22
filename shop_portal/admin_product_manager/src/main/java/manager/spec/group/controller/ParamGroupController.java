@@ -41,4 +41,8 @@ public class ParamGroupController {
     public void delete(@RequestBody Integer[] ids){
         paramGroupService.deleteSpecGroup(ids);
     }
+    //批量保存参数组
+    public void addBatch(@RequestBody List<SpecGroupVO> paramGroupList){
+        paramGroupService.addBatch(paramGroupList);
+    }
 }

@@ -20,7 +20,7 @@ public class ParamGroupServiceImpl implements ParamGroupService {
 
     @Override
     public List<SpecGroupVO> selectByCondition(SpecGroupVO specGroupVO) {
-        return specGroupDao.selectByConditionPage(specGroupVO);
+        return specGroupDao.selectByCondition(specGroupVO);
     }
 
     //添加参数组

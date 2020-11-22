@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bd8d9c-04a6-4f6a-bf48-430a3093560c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/shop_portal/portal_product_manager/target/" />
@@ -62,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="124">
               <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-449">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="827">
+              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1792#1793#0" expanded="true" />
@@ -92,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="-9">
               <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="166">
+              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="191">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -141,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="130">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,9 +217,9 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/controller/CategoryController.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -668,7 +669,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.27815014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.22989276" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.2855228" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -679,7 +680,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25953078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23020528" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3489736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
@@ -1045,9 +1046,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="n#foreach#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="124">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1055,40 +1066,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="827">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1792#1793#0" expanded="true" />
@@ -1097,6 +1085,16 @@
             <element signature="e#1968#1969#0" expanded="true" />
             <element signature="e#2033#2034#0" expanded="true" />
             <element signature="e#2082#2083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1115,20 +1113,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="130">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
-            <element signature="n#foreach#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="166">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

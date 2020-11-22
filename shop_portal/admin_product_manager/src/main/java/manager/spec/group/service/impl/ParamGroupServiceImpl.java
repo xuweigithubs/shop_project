@@ -6,6 +6,8 @@ import manager.spec.group.vo.SpecGroupVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Service(value = "paramGroupService")
 public class ParamGroupServiceImpl implements ParamGroupService {
     @Autowired
@@ -41,6 +43,9 @@ public class ParamGroupServiceImpl implements ParamGroupService {
 
     @Override
     public void addBatch(List<SpecGroupVO> addSpecGroupBatch) {
+        //首先删除原来的数据
+        specGroupDao.deleteSpecGroupByCondition(addSpecGroupBatch.get(0));
+        //再添加到分类
         specGroupDao.addSpecGroupBatch(addSpecGroupBatch);
     }
 }

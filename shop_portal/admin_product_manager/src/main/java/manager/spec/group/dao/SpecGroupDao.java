@@ -15,6 +15,8 @@ public interface SpecGroupDao {
     void updateSpecGroup(SpecGroupVO specGroupVO);
     //删除参数组
     void deleteSpecGroup(Integer[] ids);
+    //根据条件删除
+    void deleteSpecGroupByCondition(SpecGroupVO specGroupVO);
     //统计查询结果的条数
     Integer selectByConditionCount(SpecGroupVO specGroupVO);
 

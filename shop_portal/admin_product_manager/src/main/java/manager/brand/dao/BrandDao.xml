@@ -24,30 +24,24 @@
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
         select id, name, image,letter
         from tb_brand
+        where 1=1
         <if test="name!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
+            and  name like concat('%',#{name,jdbcType=VARCHAR},'%')
         </if>
         <if test="letter!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
+            and  letter like concat('%',#{letter,jdbcType=VARCHAR},'%')
         </if>
         limit #{pager.startIndex},#{pager.endIndex}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.brand.vo.BrandVO" >
         select count(1)
         from tb_brand
+        where 1=1
         <if test="name!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
+              and  name like concat('%',#{name,jdbcType=VARCHAR},'%')
         </if>
         <if test="letter!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
+              and  letter like concat('%',#{letter,jdbcType=VARCHAR},'%')
         </if>
     </select>
 </mapper>

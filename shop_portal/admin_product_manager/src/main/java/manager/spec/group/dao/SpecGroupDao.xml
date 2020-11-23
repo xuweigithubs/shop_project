@@ -20,7 +20,7 @@
         spec.cid=category.id
         <if test="name!=''">
             <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+                spec.name like concat('%',#{name,jdbcType=VARCHAR},'%')
             </where>
         </if>
         order by spec.cid
@@ -61,6 +61,6 @@
     </delete>
     <delete id="deleteSpecGroupByCondition" parameterType="manager.spec.group.vo.SpecGroupVO">
         delete from tb_spec_group
-        where cid #{cid}
+        where cid=#{cid}
     </delete>
 </mapper>

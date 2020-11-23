@@ -1,4 +1,10 @@
 package manager.brand.dao;
+import manager.brand.vo.BrandVO;
+import java.util.List;
+public interface BrandDao {
+    List<BrandVO> selectByCondition(BrandVO brandVO);
 
-public class BrandDao {
+    List<BrandVO> selectByConditionPage(BrandVO brandVO);
+
+    Integer selectByConditionCount(BrandVO brandVO);
 }

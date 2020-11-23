@@ -36,7 +36,7 @@
         </if>
         limit #{pager.startIndex},#{pager.endIndex}
     </select>
-    <select id="selectByConditionCount" resultMap="java.lang.Integer" parameterType="manager.brand.vo.BrandVO" >
+    <select id="selectByConditionCount" resultType="int" parameterType="manager.brand.vo.BrandVO" >
         select count(1)
         from tb_brand
         <if test="name!=''">

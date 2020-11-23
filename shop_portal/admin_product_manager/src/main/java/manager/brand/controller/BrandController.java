@@ -21,7 +21,7 @@ public class BrandController {
     @Autowired
     private BrandService brandService;
     @RequestMapping(value = "/brand/page/list", method = RequestMethod.POST)
-    @ApiOperation(notes = "根据名称分页获取参数组信息", value = "get param group info")
+    @ApiOperation(notes = "分页获取品牌信息", value = "query brand")
     public PageView<List<BrandVO>> selectByConditionPage(@RequestBody BrandVO brandVO){
         PageView<List<BrandVO>> pageVO=new PageView<List<BrandVO>>();
         pageVO.setRows(brandService.selectByConditionPage(brandVO));

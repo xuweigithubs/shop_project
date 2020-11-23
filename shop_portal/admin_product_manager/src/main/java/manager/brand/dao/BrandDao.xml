@@ -21,4 +21,33 @@
             </where>
         </if>
     </select>
+    <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
+        select id, name, image,letter
+        from tb_brand
+        <if test="name!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+        <if test="letter!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+        limit #{pager.startIndex},#{pager.endIndex}
+    </select>
+    <select id="selectByConditionCount" resultMap="java.lang.Integer" parameterType="manager.brand.vo.BrandVO" >
+        select count(1)
+        from tb_brand
+        <if test="name!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+        <if test="letter!=''">
+            <where>
+                name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+    </select>
 </mapper>

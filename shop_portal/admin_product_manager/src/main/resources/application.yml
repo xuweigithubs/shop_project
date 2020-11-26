@@ -20,7 +20,8 @@ multipart:
   max-file-size: 50Mb
   max-request-size: 50Mb
 web:
-   upload-path: E:\Develop\Files\Photos\
+   upload-path: H:\fileupload\
+   domain: http://manage.huawei.com/images/
 mybatis:
   mapper-locations: classpath:manager/**/*Dao.xml
   type-aliases-package: manager

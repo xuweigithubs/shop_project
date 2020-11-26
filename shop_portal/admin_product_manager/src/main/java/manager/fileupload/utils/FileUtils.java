@@ -13,7 +13,7 @@ public class FileUtils {
      * @param fileName 源文件名
      * @return
      */
-    public static boolean upload(MultipartFile file, String path, String fileName){
+    public static String upload(MultipartFile file,String domain, String path, String fileName){
         //使用原文件名
         String realPath = path + "/" + fileName;
         File dest = new File(realPath);
@@ -24,14 +24,12 @@ public class FileUtils {
         try {
             //保存文件
             file.transferTo(dest);
-            return true;
         } catch (IllegalStateException e) {
             e.printStackTrace();
-            return false;
         } catch (IOException e) {
             e.printStackTrace();
-            return false;
         }
+        return domain+fileName;
 
     }
 }

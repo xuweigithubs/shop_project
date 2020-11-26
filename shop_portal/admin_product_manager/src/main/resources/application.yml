@@ -6,6 +6,21 @@ spring:
         username: root
         password: root
         driver-class-name: com.mysql.jdbc.Driver
+    freemarker:
+      allow-request-override: false
+      cache: false
+      check-template-location: true
+      charset: utf-8
+      content-type: text/html
+      expose-request-attributes: false
+      expose-session-attributes: false
+      expose-spring-macro-helpers: false
+      suffix: .ftl
+multipart:
+  max-file-size: 50Mb
+  max-request-size: 50Mb
+web:
+   upload-path: E:\Develop\Files\Photos\
 mybatis:
   mapper-locations: classpath:manager/**/*Dao.xml
   type-aliases-package: manager

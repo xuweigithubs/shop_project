@@ -22,9 +22,15 @@ public class FileUploadController {
     @Value("${web.domain}")
     private String domain;
     @RequestMapping("upload")
-    public String upload(MultipartFile file){
+    public String upload(MultipartFile file,String orgUrl){
         // 上传成功或者失败的提示
+        String orgFileName="";
+        if(orgUrl!=null){
+            orgFileName=orgUrl.substring(orgUrl.lastIndexOf("/")+1);
+        }
         String fileName= FileNameUtils.getFileName(file.getOriginalFilename());
+        //删除原来的文件
+        FileUtils.deleteFile(path,orgFileName);
         return FileUtils.upload(file,domain,path,fileName);
     }
 

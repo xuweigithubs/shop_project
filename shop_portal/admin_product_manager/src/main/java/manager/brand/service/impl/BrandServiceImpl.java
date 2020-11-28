@@ -20,9 +20,12 @@ public class BrandServiceImpl implements BrandService {
     public List<BrandVO> selectByConditionPage(BrandVO brandVO) {
         return brandDao.selectByConditionPage(brandVO);
     }
-
     @Override
     public Integer selectByConditionCount(BrandVO brandVO) {
         return brandDao.selectByConditionCount(brandVO);
+    }
+    //添加品牌
+    public  void addBrand(BrandVO brandVO){
+        brandDao.addBrand(brandVO);
     }
 }

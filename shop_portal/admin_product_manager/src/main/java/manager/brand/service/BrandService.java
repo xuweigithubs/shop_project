@@ -10,4 +10,6 @@ public interface BrandService {
     List<BrandVO> selectByConditionPage(BrandVO brandVO);
 
     Integer selectByConditionCount(BrandVO brandVO);
+
+    void addBrand(BrandVO brandVO);
 }

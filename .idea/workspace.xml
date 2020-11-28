@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c3bd8d9c-04a6-4f6a-bf48-430a3093560c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/controller/FileUploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/shop_portal/portal_product_manager/target/" />
@@ -25,15 +29,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/controller/FileUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            <state relative-caret-position="300">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#831#832#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="875">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="575">
               <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
             </state>
           </provider>
@@ -84,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/com/huawei/vo/Product.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/com/huawei/ProductManagerApplication.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/product/manager/ProductManagerApplication.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/product/ProductManagerApplication.java" />
@@ -119,12 +209,7 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/service/FileUploadService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/service/impl/impl.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/MyWebAppConfigurer.java" />
@@ -135,6 +220,12 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/controller/FileUploadController.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java" />
       </list>
     </option>
   </component>
@@ -172,6 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +315,78 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="brand" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +457,29 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="categories" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="fileupload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,6 +493,31 @@
               <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="fileupload" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="fileupload" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="fileupload" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +581,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,7 +703,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.25871313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.27144772" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.2855228" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -503,7 +714,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25953078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.20087977" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
@@ -511,7 +722,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.27419356" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991204" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32844576" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.20821114" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32991204" />
@@ -755,16 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/controller/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -795,26 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="n#foreach#0;n#delete#0;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -829,55 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,16 +1054,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/MyWebAppConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/MyWebAppConfigurer.java" />
     <entry file="jar://D:/m2/repository/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -957,31 +1080,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="64" />
+        <state relative-caret-position="875">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        <state relative-caret-position="300">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="n#foreach#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
           </folding>
         </state>
       </provider>

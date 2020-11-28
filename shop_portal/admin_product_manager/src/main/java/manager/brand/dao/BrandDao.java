@@ -7,4 +7,6 @@ public interface BrandDao {
     List<BrandVO> selectByConditionPage(BrandVO brandVO);
 
     Integer selectByConditionCount(BrandVO brandVO);
+    //添加品牌信息
+    void addBrand(BrandVO brandVO);
 }

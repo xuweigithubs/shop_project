@@ -44,4 +44,7 @@
               and  letter like concat('%',#{letter,jdbcType=VARCHAR},'%')
         </if>
     </select>
+    <insert id="addBrand" parameterType="manager.brand.vo.BrandVO" >
+        insert into tb_brand(name,image,letter) values(#{name}, #{image},#{letter})
+    </insert>
 </mapper>

@@ -34,4 +34,10 @@ public class BrandController {
     public  void addBrand(@RequestBody BrandVO brandVO){
         brandService.addBrand(brandVO);
     }
+    //删除品牌
+    @RequestMapping(value = "/brand/delete", method = RequestMethod.POST)
+    @ApiOperation(notes = "分页获取品牌信息", value = "query brand")
+    public  void deleteBrand(@RequestBody Integer[] ids){
+        brandService.deleteBrand(ids);
+    }
 }

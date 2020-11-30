@@ -12,4 +12,6 @@ public interface BrandService {
     Integer selectByConditionCount(BrandVO brandVO);
 
     void addBrand(BrandVO brandVO);
+    //删除品牌
+    void deleteBrand(Integer[] ids);
 }

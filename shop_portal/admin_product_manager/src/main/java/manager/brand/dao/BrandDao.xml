@@ -48,6 +48,10 @@
     <insert id="addBrand" parameterType="manager.brand.vo.BrandVO" >
         insert into tb_brand(name,image,letter) values(#{name}, #{image},#{letter})
     </insert>
+    <insert id="updateBrand" parameterType="manager.brand.vo.BrandVO" >
+        update tb_brand t set t.name=#{name},t.image=#{image},t.letter=#{letter}
+        where t.id=#{id}
+    </insert>
     <delete id="deleteBrand" parameterType="int">
         delete from tb_brand
         where id IN

@@ -9,6 +9,8 @@ public interface BrandDao {
     Integer selectByConditionCount(BrandVO brandVO);
     //添加品牌信息
     void addBrand(BrandVO brandVO);
+    //修改品牌
+    void updateBrand(BrandVO brandVO);
     //删除品牌
     void deleteBrand(Integer[] ids);
 }

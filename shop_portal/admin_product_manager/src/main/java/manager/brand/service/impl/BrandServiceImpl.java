@@ -32,4 +32,8 @@ public class BrandServiceImpl implements BrandService {
     public  void deleteBrand(Integer[] ids){
         brandDao.deleteBrand(ids);
     }
+    //修改品牌
+    public void updateBrand(BrandVO brandVO){
+        brandDao.updateBrand(brandVO);
+    }
 }

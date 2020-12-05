@@ -40,4 +40,10 @@ public class BrandController {
     public  void deleteBrand(@RequestBody Integer[] ids){
         brandService.deleteBrand(ids);
     }
+    //修改品牌
+    @RequestMapping(value = "/brand/update", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改品牌", value = "updateBrand")
+    public void updateBrand(@RequestBody BrandVO brandVO){
+        brandService.updateBrand(brandVO);
+    }
 }

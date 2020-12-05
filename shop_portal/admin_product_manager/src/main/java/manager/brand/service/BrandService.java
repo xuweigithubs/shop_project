@@ -14,4 +14,6 @@ public interface BrandService {
     void addBrand(BrandVO brandVO);
     //删除品牌
     void deleteBrand(Integer[] ids);
+    //修改平拍
+    void updateBrand(BrandVO brandVO);
 }

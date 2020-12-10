@@ -1,4 +1,5 @@
 package manager.brand.dao;
+import manager.brand.vo.BrandCategoryRlsVO;
 import manager.brand.vo.BrandVO;
 import java.util.List;
 public interface BrandDao {
@@ -13,4 +14,7 @@ public interface BrandDao {
     void updateBrand(BrandVO brandVO);
     //删除品牌
     void deleteBrand(Integer[] ids);
+    //根据品牌获取分类编码
+    List<BrandCategoryRlsVO> selectCategoryBybrandId(BrandCategoryRlsVO brandCategoryRlsVO);
+    //保存分类编码
 }

@@ -2,6 +2,7 @@ package manager.brand.service.impl;
 
 import manager.brand.dao.BrandDao;
 import manager.brand.service.BrandService;
+import manager.brand.vo.BrandCategoryRlsVO;
 import manager.brand.vo.BrandVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,5 +36,15 @@ public class BrandServiceImpl implements BrandService {
     //修改品牌
     public void updateBrand(BrandVO brandVO){
         brandDao.updateBrand(brandVO);
+    }
+
+    @Override
+    public List<Integer> getCategoryIdByBrandId(BrandCategoryRlsVO brandCategoryRlsVO) {
+        return null;
+    }
+
+    @Override
+    public void batchSaveBrandAndCategoryRls(BrandCategoryRlsVO brandCategoryRlsVO) {
+
     }
 }

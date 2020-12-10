@@ -3,6 +3,7 @@ package manager.brand.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import manager.brand.service.BrandService;
+import manager.brand.vo.BrandCategoryRlsVO;
 import manager.brand.vo.BrandVO;
 import manager.common.PageView;
 import manager.spec.group.vo.SpecGroupVO;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -45,5 +47,18 @@ public class BrandController {
     @ApiOperation(notes = "修改品牌", value = "updateBrand")
     public void updateBrand(@RequestBody BrandVO brandVO){
         brandService.updateBrand(brandVO);
+    }
+    //获取数据
+    @RequestMapping(value = "/brand/getCategoryIdByBrandId", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改品牌", value = "updateBrand")
+    public List<Integer> getCategoryIdByBrandId(@RequestBody BrandCategoryRlsVO brandCategoryRlsVO){
+       List<Integer> list=brandService.getCategoryIdByBrandId(brandCategoryRlsVO);
+       return list;
+    }
+    //保存品牌与分类的关系
+    @RequestMapping(value = "/brand/batchSaveBrandAndCategoryRls", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改品牌", value = "updateBrand")
+    public void batchSaveBrandAndCategoryRls(@RequestBody BrandCategoryRlsVO brandCategoryRlsVO){
+        brandService.batchSaveBrandAndCategoryRls(brandCategoryRlsVO);
     }
 }

@@ -7,6 +7,10 @@
         <result column="image" property="image" jdbcType="VARCHAR" />
         <result column="letter" property="letter" jdbcType="VARCHAR" />
     </resultMap>
+    <resultMap id="BrandAndCategoryResultMap" type="manager.brand.vo.BrandCategoryRlsVO" >
+        <result column="brandId" property="brandId" jdbcType="VARCHAR" />
+        <result column="categoryId" property="categoryId" jdbcType="VARCHAR" />
+    </resultMap>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
         select id, name, image,letter
         from tb_brand
@@ -58,5 +62,22 @@
         <foreach collection="array" item="id" open="(" separator="," close=")">
             #{id}
         </foreach>
+    </delete>
+    <!--查询关系数据-->
+    <select id="selectCategoryBybrandId" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
+        select brandId,categoryId
+        from tb_category_brand
+        where brandId=#{categoryId}
+    </select>
+    <insert id="batchSaveBrandAndCategoryRls" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
+        insert into tb_category_brand(category_id,brand_id) values
+        <foreach collection="list" item= "brandRlsItem" index= "index" separator =",">
+           (
+             #{brandRlsItem.categoryId,brandRlsItem.brandId}
+            )
+        </foreach>
+    </insert>
+    <delete id="deleteRlsByBrandId" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
+        delete tb_category_brand t where t.brand_id=#{brnadId}
     </delete>
 </mapper>

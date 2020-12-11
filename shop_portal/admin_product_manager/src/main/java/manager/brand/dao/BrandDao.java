@@ -1,6 +1,8 @@
 package manager.brand.dao;
 import manager.brand.vo.BrandCategoryRlsVO;
 import manager.brand.vo.BrandVO;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 public interface BrandDao {
     List<BrandVO> selectByCondition(BrandVO brandVO);
@@ -17,4 +19,6 @@ public interface BrandDao {
     //根据品牌获取分类编码
     List<BrandCategoryRlsVO> selectCategoryBybrandId(BrandCategoryRlsVO brandCategoryRlsVO);
     //保存分类编码
+    void batchSaveBrandAndCategoryRls(@Param("brandCategoryRlsVOList") List<BrandCategoryRlsVO> brandCategoryRlsVOList);
+    void deleteRlsByBrandId(@Param("brandCategoryRlsVO") BrandCategoryRlsVO brandCategoryRlsVO);
 }

@@ -20,5 +20,5 @@ public interface BrandService {
    //获取品牌对应的产品
     List<Integer> getCategoryIdByBrandId(BrandCategoryRlsVO brandCategoryRlsVO);
     //保存品牌和分类
-    void batchSaveBrandAndCategoryRls(BrandCategoryRlsVO brandCategoryRlsVO);
+    void batchSaveBrandAndCategoryRls(List<BrandCategoryRlsVO> brandCategoryRlsVOList);
 }

@@ -7,6 +7,7 @@ import manager.brand.vo.BrandVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service(value = "brandService")
 public class BrandServiceImpl implements BrandService {
@@ -40,11 +41,17 @@ public class BrandServiceImpl implements BrandService {
 
     @Override
     public List<Integer> getCategoryIdByBrandId(BrandCategoryRlsVO brandCategoryRlsVO) {
-        return null;
+        List<BrandCategoryRlsVO> list=brandDao.selectCategoryBybrandId(brandCategoryRlsVO);
+        List<Integer> categoryIdList=new ArrayList<Integer>();
+        for (int i = 0; i < list.size(); i++) {
+            categoryIdList.add(list.get(i).getCategoryId());
+        }
+        return categoryIdList;
     }
-
+    //保存分类数据
     @Override
-    public void batchSaveBrandAndCategoryRls(BrandCategoryRlsVO brandCategoryRlsVO) {
-
+    public void batchSaveBrandAndCategoryRls(List<BrandCategoryRlsVO> brandCategoryRlsVOList) {
+        brandDao.deleteRlsByBrandId(brandCategoryRlsVOList.get(0));
+        brandDao.batchSaveBrandAndCategoryRls(brandCategoryRlsVOList);
     }
 }

@@ -64,20 +64,20 @@
         </foreach>
     </delete>
     <!--查询关系数据-->
-    <select id="selectCategoryBybrandId" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
-        select brandId,categoryId
+    <select id="selectCategoryBybrandId" resultMap="BrandAndCategoryResultMap" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
+        select brand_id as brandId,category_id as categoryId
         from tb_category_brand
-        where brandId=#{categoryId}
+        where brand_id=#{brandId}
     </select>
-    <insert id="batchSaveBrandAndCategoryRls" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
+    <insert id="batchSaveBrandAndCategoryRls" parameterType="java.util.List" >
         insert into tb_category_brand(category_id,brand_id) values
-        <foreach collection="list" item= "brandRlsItem" index= "index" separator =",">
+        <foreach collection="brandCategoryRlsVOList" item="brandRlsItem" index="index" separator=",">
            (
-             #{brandRlsItem.categoryId,brandRlsItem.brandId}
+             #{brandRlsItem.categoryId},#{brandRlsItem.brandId}
             )
         </foreach>
     </insert>
     <delete id="deleteRlsByBrandId" parameterType="manager.brand.vo.BrandCategoryRlsVO" >
-        delete tb_category_brand t where t.brand_id=#{brnadId}
+        delete from tb_category_brand t where t.brand_id=#{brandCategoryRlsVO.brandId}
     </delete>
 </mapper>

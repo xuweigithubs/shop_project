@@ -58,7 +58,7 @@ public class BrandController {
     //保存品牌与分类的关系
     @RequestMapping(value = "/brand/batchSaveBrandAndCategoryRls", method = RequestMethod.POST)
     @ApiOperation(notes = "修改品牌", value = "updateBrand")
-    public void batchSaveBrandAndCategoryRls(@RequestBody BrandCategoryRlsVO brandCategoryRlsVO){
-        brandService.batchSaveBrandAndCategoryRls(brandCategoryRlsVO);
+    public void batchSaveBrandAndCategoryRls(@RequestBody List<BrandCategoryRlsVO> brandCategoryRlsVOList){
+        brandService.batchSaveBrandAndCategoryRls(brandCategoryRlsVOList);
     }
 }

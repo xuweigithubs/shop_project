@@ -3,8 +3,6 @@ package manager.spec.params.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import manager.common.PageView;
-import manager.spec.group.service.ParamGroupService;
-import manager.spec.group.vo.SpecGroupVO;
 import manager.spec.params.service.ParamService;
 import manager.spec.params.vo.SpecParamVO;
 import org.springframework.beans.factory.annotation.Autowired;

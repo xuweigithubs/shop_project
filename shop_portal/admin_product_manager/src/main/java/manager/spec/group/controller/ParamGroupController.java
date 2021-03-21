@@ -1,5 +1,4 @@
 package manager.spec.group.controller;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import manager.common.PageView;

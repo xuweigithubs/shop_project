@@ -1,8 +1,6 @@
 package manager.spec.group.service;
 import manager.common.PageView;
 import manager.spec.group.vo.SpecGroupVO;
-
-import java.lang.reflect.Array;
 import java.util.List;
 
 public interface ParamGroupService {

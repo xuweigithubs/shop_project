@@ -16,7 +16,7 @@
         select
             id,
             cid,
-            groupId,
+            group_id as groupId,
             name,
             numberic,
             unit,
@@ -33,7 +33,7 @@
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.params.vo.SpecParamVO" >
         select count(1)
-        from tb_spec_group
+        from tb_spec_param
         <if test="name!=''">
             <where>
                 name like concat('%',#{name,jdbcType=VARCHAR},'%')

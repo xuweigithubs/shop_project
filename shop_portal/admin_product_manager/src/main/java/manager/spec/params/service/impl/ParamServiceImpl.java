@@ -13,8 +13,9 @@ public class ParamServiceImpl implements ParamService {
     public PageView<List<SpecParamVO>> selectByConditionPage(SpecParamVO specParamVO) {
         PageView<List<SpecParamVO>> PageView=new PageView<List<SpecParamVO>>();
         List<SpecParamVO> rows= paramDao.selectByConditionPage(specParamVO);
-        Integer count=paramDao.selectByConditionPageCount(specParamVO);
+        Integer count=paramDao.selectByConditionCount(specParamVO);
         PageView.setRows(rows);
+        PageView.setTotal(count);
         return PageView;
     }
 }

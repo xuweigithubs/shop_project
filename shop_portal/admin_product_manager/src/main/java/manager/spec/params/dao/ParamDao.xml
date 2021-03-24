@@ -6,10 +6,10 @@
         <id column="cid" property="cid" jdbcType="VARCHAR" />
         <id column="groupId" property="groupId" jdbcType="VARCHAR" />
         <result column="name" property="name" jdbcType="VARCHAR" />
-        <result column="numberic" property="numberic" jdbcType="VARCHAR" />
+        <result column="numberic" property="numberic" jdbcType="TINYINT" />
         <result column="unit" property="unit" jdbcType="VARCHAR" />
-        <result column="generic" property="generic" jdbcType="VARCHAR" />
-        <result column="searching" property="searching" jdbcType="VARCHAR" />
+        <result column="generic" property="generic" jdbcType="TINYINT" />
+        <result column="searching" property="searching" jdbcType="TINYINT" />
         <result column="segments" property="segments" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.spec.params.vo.SpecParamVO" >
@@ -29,7 +29,7 @@
                 spec_parm.name like concat('%',#{name,jdbcType=VARCHAR},'%')
             </where>
         </if>
-        limit #{pager.startIndex},#{pager.endIndex}
+        limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.params.vo.SpecParamVO" >
         select count(1)
@@ -40,4 +40,32 @@
             </where>
         </if>
     </select>
+    <insert id="saveParam">
+        insert into tb_spec_param(
+            cid,
+            group_id,
+            name,
+            numberic,
+            unit,
+            generic,
+            searching,
+            segments
+        ) values (
+                #{cid},
+                #{groupId},
+                #{name},
+                #{numberic},
+                #{unit},
+                #{generic},
+                #{searching},
+                #{segments}
+           )
+    </insert>
+    <delete id="deleteParam" parameterType="int">
+        delete from tb_spec_param
+        where id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

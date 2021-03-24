@@ -18,4 +18,14 @@ public class ParamServiceImpl implements ParamService {
         PageView.setTotal(count);
         return PageView;
     }
+
+    @Override
+    public void saveParam(SpecParamVO specParamVO) {
+        paramDao.saveParam(specParamVO);
+    }
+
+    @Override
+    public void deleteParam(Integer[] ids) {
+        paramDao.deleteParam(ids);
+    }
 }

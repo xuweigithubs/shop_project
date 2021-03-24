@@ -36,7 +36,7 @@
             and  letter like concat('%',#{letter,jdbcType=VARCHAR},'%')
         </if>
         order by id desc
-        limit #{pager.startIndex},#{pager.endIndex}
+        limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.brand.vo.BrandVO" >
         select count(1)

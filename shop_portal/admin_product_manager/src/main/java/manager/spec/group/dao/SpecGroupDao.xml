@@ -24,7 +24,7 @@
             </where>
         </if>
         order by spec.cid
-        limit #{pager.startIndex},#{pager.endIndex}
+        limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select count(1)

@@ -9,10 +9,10 @@ public class SpecParamVO {
     private String cid;
     private String groupId;
     private String name;
-    private String numberic;
+    private Boolean numberic;
     private String unit;
-    private String generic;
-    private String searching;
+    private Boolean generic;
+    private Boolean searching;
     private String segments;
     private Pager pager;
 }

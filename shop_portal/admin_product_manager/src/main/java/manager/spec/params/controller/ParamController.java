@@ -25,4 +25,17 @@ public class ParamController {
     public PageView<List<SpecParamVO>> selectByConditionPage(@RequestBody SpecParamVO specParamVO){
         return paramService.selectByConditionPage(specParamVO);
     }
+    //保存数据
+    @RequestMapping(value = "/spec/params/save", method = RequestMethod.POST)
+    @ApiOperation(notes = "保存规格参数信息", value = "save params info")
+    public void saveParams(@RequestBody SpecParamVO specParamVO){
+        paramService.saveParam(specParamVO);
+    }
+    //删除规格参数
+    @RequestMapping(value = "/spec/params/delete", method = RequestMethod.POST)
+    @ApiOperation(notes = "删除规格参数", value = "delete params info")
+    public void delete(@RequestBody Integer[] ids){
+        paramService.deleteParam(ids);
+    }
+
 }

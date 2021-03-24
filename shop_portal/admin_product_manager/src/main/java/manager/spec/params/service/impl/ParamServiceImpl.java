@@ -28,4 +28,9 @@ public class ParamServiceImpl implements ParamService {
     public void deleteParam(Integer[] ids) {
         paramDao.deleteParam(ids);
     }
+
+    @Override
+    public void updateParam(SpecParamVO specParamVO) {
+        paramDao.updateParam(specParamVO);
+    }
 }

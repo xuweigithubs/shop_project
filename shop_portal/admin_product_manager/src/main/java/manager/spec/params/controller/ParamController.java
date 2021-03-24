@@ -37,5 +37,10 @@ public class ParamController {
     public void delete(@RequestBody Integer[] ids){
         paramService.deleteParam(ids);
     }
-
+   //修改规格参数
+    @RequestMapping(value = "/spec/params/update", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改规格参数", value = "delete params info")
+    public void update(@RequestBody SpecParamVO specParamVO){
+       paramService.updateParam(specParamVO);
+   }
 }

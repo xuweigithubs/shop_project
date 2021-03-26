@@ -10,7 +10,14 @@
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select spec.id as id,spec.name as name
         from tb_spec_group spec
-        where spec.cid= #{cid}
+        <where>
+            <if test="cid!=''">
+                    spec.cid=#{cid}
+            </if>
+            <if test="name!=''and name!=null">
+                    and spec.name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
     </select>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select spec.id as id,spec.cid as cid,category.name as categoryName, spec.name as name
@@ -18,22 +25,22 @@
         left join
         tb_category category on
         spec.cid=category.id
-        <if test="name!=''">
-            <where>
-                spec.name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
+        <where>
+            <if test="name!='' and name!=null">
+                    spec.name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
         order by spec.cid
         limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.group.vo.SpecGroupVO" >
         select count(1)
         from tb_spec_group
-        <if test="name!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
+        <where>
+            <if test="name!=''">
+                    name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
     </select>
     <insert id="addSpecGroup" parameterType="manager.spec.group.vo.SpecGroupVO" >
         insert into tb_spec_group(cid, name) values(#{cid}, #{name})

@@ -6,6 +6,7 @@
         <id column="cid" property="cid" jdbcType="VARCHAR" />
         <id column="groupId" property="groupId" jdbcType="VARCHAR" />
         <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="groupName" property="groupName" jdbcType="VARCHAR" />
         <result column="numberic" property="numberic" jdbcType="TINYINT" />
         <result column="unit" property="unit" jdbcType="VARCHAR" />
         <result column="generic" property="generic" jdbcType="TINYINT" />
@@ -14,41 +15,40 @@
     </resultMap>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.spec.params.vo.SpecParamVO" >
         select
-            id,
-            cid,
-            group_id as groupId,
-            name,
+            spec_parm.id,
+            spec_parm.cid,
+            spec_parm.group_id as groupId,
+            spec_group.name as groupName,
+            spec_parm.name,
             numberic,
             unit,
             generic,
             searching,
             segments
         from tb_spec_param spec_parm
-        <if test="name!=''">
-            <where>
-                spec_parm.name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
-        <if test="cid!=''">
-            <where>
-                cid=#{cid,jdbcType=VARCHAR}
-            </where>
-        </if>
+        left join tb_spec_group spec_group
+        on spec_parm.group_id=spec_group.id
+        <where>
+            <if test="name!='' and  name!=null">
+                    spec_parm.name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+            <if test="cid!=''">
+                spec_parm.cid=#{cid,jdbcType=VARCHAR}
+            </if>
+        </where>
         limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.params.vo.SpecParamVO" >
         select count(1)
         from tb_spec_param
-        <if test="name!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
-        <if test="cid!=''">
-            <where>
-                cid=#{cid,jdbcType=VARCHAR}
-            </where>
-        </if>
+        <where>
+            <if test="name!='' and name!=null">
+                    name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+            <if test="cid!=''">
+                   and cid=#{cid,jdbcType=VARCHAR}
+            </if>
+        </where>
     </select>
     <insert id="saveParam">
         insert into tb_spec_param(
@@ -75,6 +75,14 @@
         delete from tb_spec_param
         where id IN
         <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <delete id="updateParamByIds" parameterType="int">
+        update  tb_spec_param t
+        set t.group_id=#{groupId}
+        where id IN
+        <foreach collection="specParamIds" item="id" open="(" separator="," close=")">
             #{id}
         </foreach>
     </delete>

@@ -11,4 +11,6 @@ public interface ParamService {
     void deleteParam(Integer[] ids);
     //修改规格参数
     void updateParam(SpecParamVO specParamVO);
+    //根据groupId批量修改
+    void updateParamByIds(SpecParamVO specParamVO);
 }

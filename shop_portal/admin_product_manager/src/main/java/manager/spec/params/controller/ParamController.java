@@ -43,4 +43,9 @@ public class ParamController {
     public void update(@RequestBody SpecParamVO specParamVO){
        paramService.updateParam(specParamVO);
    }
+    @RequestMapping(value = "/spec/params/updateByIds", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改规格参数", value = "delete params info")
+    public void updateByIds(@RequestBody SpecParamVO specParamVO){
+        paramService.updateParamByIds(specParamVO);
+    }
 }

@@ -8,6 +8,7 @@ public class SpecParamVO {
     private String id;
     private String cid;
     private String groupId;
+    private String groupName;
     private String name;
     private Boolean numberic;
     private String unit;
@@ -15,4 +16,5 @@ public class SpecParamVO {
     private Boolean searching;
     private String segments;
     private Pager pager;
+    private Integer[] specParamIds;
 }

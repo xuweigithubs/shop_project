@@ -33,4 +33,7 @@ public class ParamServiceImpl implements ParamService {
     public void updateParam(SpecParamVO specParamVO) {
         paramDao.updateParam(specParamVO);
     }
+    public void updateParamByIds(SpecParamVO specParamVO){
+        paramDao.updateParamByIds(specParamVO);
+    }
 }

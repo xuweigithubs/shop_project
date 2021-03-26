@@ -12,4 +12,7 @@ public interface ParamDao {
     void deleteParam(Integer[] ids);
     //修改规格参数
     void updateParam(SpecParamVO specParamVO);
+    //根据id批量修改规格参数
+    void updateParamByIds(SpecParamVO specParamVO);
+
 }

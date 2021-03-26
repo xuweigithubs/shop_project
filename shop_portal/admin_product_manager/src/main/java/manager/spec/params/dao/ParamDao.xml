@@ -29,6 +29,11 @@
                 spec_parm.name like concat('%',#{name,jdbcType=VARCHAR},'%')
             </where>
         </if>
+        <if test="cid!=''">
+            <where>
+                cid=#{cid,jdbcType=VARCHAR}
+            </where>
+        </if>
         limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.params.vo.SpecParamVO" >
@@ -37,6 +42,11 @@
         <if test="name!=''">
             <where>
                 name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </where>
+        </if>
+        <if test="cid!=''">
+            <where>
+                cid=#{cid,jdbcType=VARCHAR}
             </where>
         </if>
     </select>

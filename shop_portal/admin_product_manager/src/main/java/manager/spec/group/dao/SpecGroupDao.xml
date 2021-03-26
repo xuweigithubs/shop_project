@@ -8,11 +8,14 @@
         <result column="categoryName" property="categoryName" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecGroupVO" >
-        select spec.id as id,spec.name as name
+        select spec.id as id,spec.cid as cid,spec.name as name
         from tb_spec_group spec
         <where>
-            <if test="cid!=''">
+            <if test="cid!='' and cid!=null">
                     spec.cid=#{cid}
+            </if>
+            <if test="id!='' and id!=null">
+                    spec.id=#{id}
             </if>
             <if test="name!=''and name!=null">
                     and spec.name like concat('%',#{name,jdbcType=VARCHAR},'%')

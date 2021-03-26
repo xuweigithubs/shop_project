@@ -3,6 +3,8 @@ package manager.spec.params.vo;
 import lombok.Data;
 import manager.common.Pager;
 
+import java.util.List;
+
 @Data
 public class SpecParamVO {
     private String id;
@@ -17,4 +19,5 @@ public class SpecParamVO {
     private String segments;
     private Pager pager;
     private Integer[] specParamIds;
+    private List<String> groupIds;
 }

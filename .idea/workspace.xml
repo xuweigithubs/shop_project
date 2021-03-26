@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3bd8d9c-04a6-4f6a-bf48-430a3093560c" name="Default Changelist" comment="">
+    <list default="true" id="c3bd8d9c-04a6-4f6a-bf48-430a3093560c" name="Default Changelist" comment="提交商品规格参数代码">
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SkuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuDetialVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/StockVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecificationVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/ParamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/ParamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/vo/SpecParamVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/vo/SpecParamVO.java" afterDir="false" />
     </list>
@@ -32,108 +39,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.xml">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1828#1829#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#2087#2088#0" expanded="true" />
-                <element signature="e#2138#2139#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#620#639#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#1218#1219#0" expanded="true" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandCategoryRlsVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1850">
-              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/ParamService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="350">
+              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -144,8 +66,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -172,14 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/spec/SpecGroupDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/Pager.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/manager/catagories/CatagoryDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/vo/CatagoryVO.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/dao/CatagoryDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/vo/CategoryVO.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/catagories/service/impl/CategoryServiceImpl.java" />
@@ -189,9 +103,7 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/vo/CategoryEnum.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/controller/CategoryController.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/service/FileUploadService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/service/impl/impl.java" />
@@ -216,13 +128,23 @@
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/dao/BrandDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java" />
-        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/ParamService.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuDetialVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SkuVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/StockVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/vo/SpecParamVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml" />
         <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/Specification.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java" />
+        <option value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.java" />
       </list>
     </option>
   </component>
@@ -265,9 +187,10 @@
     <option name="jreName" value="1.8.0_171" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -580,6 +503,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_portal" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_product_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -864,7 +822,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/crm-new-code/b-2-c-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -872,19 +830,22 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\spec\group\dao" />
+      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\spec\params\dao" />
+      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\catagories\dao" />
+      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager\catagories" />
+      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="manager.spec.group.dao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager\spec\group\dao" />
       <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager\spec\params" />
       <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager" />
       <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources" />
       <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager\spec\manager.spec.group" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\spec\params\dao" />
-      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\catagories\dao" />
-      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\java\manager\spec\group\dao" />
-      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources\manager\catagories" />
-      <recent name="G:\shop_project\shop_portal\admin_product_manager\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -926,6 +887,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal_product_manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="portal.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="portal_product_manager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.huawei.ProductApplication" />
@@ -945,6 +913,7 @@
       <item itemvalue="Application.ProductApplication" />
       <item itemvalue="Spring Boot.ProductApplication" />
       <item itemvalue="Spring Boot.ProductManagerApplication" />
+      <item itemvalue="Spring Boot.ProductApplication (1)" />
     </list>
   </component>
   <component name="SpringBeansView">
@@ -991,7 +960,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4923664" visible="true" weight="0.2955764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4923664" visible="true" weight="0.26742628" />
       <window_info id="Structure" order="1" sideWeight="0.50763357" side_tool="true" weight="0.29289544" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1002,7 +971,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1744868" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.2888563" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.34017596" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.14222874" />
@@ -1021,7 +990,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.31836462" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.042895444" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -1076,81 +1045,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="提交商品规格参数代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/ServiceResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/UUIDUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/java/portal/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/mapping/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/cache/CacheAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/fileupload/utils/FileNameUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/ProductManagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/service/impl/BrandServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-211">
@@ -1170,41 +1064,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/controller/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1274,20 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/portal_product_manager/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1344,43 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/brand/vo/BrandVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1402,87 +1210,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/common/PageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuDetialVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SkuVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/SpuVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/vo/StockVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/goods/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/ParamService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="265">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/controller/ParamGroupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="-136">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/controller/ParamController.java">
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/controller/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="-10">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/categories/dao/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/ParamGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#2087#2088#0" expanded="true" />
-            <element signature="e#2138#2139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/vo/SpecParamVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/service/impl/ParamGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m2/repository/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/service/impl/ParamServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="65">
+          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#620#639#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#2668#2688#0" expanded="true" />
+            <element signature="e#2798#2813#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/params/dao/ParamDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        <state relative-caret-position="2725">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecGroupVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="24" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/vo/SpecificationVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecGroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_portal/admin_product_manager/src/main/java/manager/spec/group/dao/SpecificationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

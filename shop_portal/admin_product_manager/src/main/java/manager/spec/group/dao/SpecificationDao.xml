@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.spec.group.dao.SpecificationDao" >
+    <resultMap id="BaseResultMap" type="manager.spec.group.vo.SpecificationVO" >
+        <id column="category_id" property="categoryId" jdbcType="VARCHAR" />
+        <result column="specifications" property="specifications" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.group.vo.SpecificationVO" >
+        select category_id,specifications
+            from tb_specification spec
+            <where>
+                <if test="categoryId!='' and categoryId!=null">
+                    spec.category_id=#{categoryId}
+                </if>
+            </where>
+    </select>
+    <insert id="add" parameterType="manager.spec.group.vo.SpecificationVO" >
+        insert into tb_specification(category_id, specifications) values(#{categoryId}, #{specifications})
+    </insert>
+    <update id="updateByCondition" parameterType="manager.spec.group.vo.SpecificationVO" >
+        update tb_specification t set t.specifications=#{specifications},t.category_id=#{cid} where t.category_id=#{categoryId}
+    </update>
+    <delete id="deleteByCondition" parameterType="manager.spec.group.vo.SpecificationVO">
+        delete from tb_specification
+        where category_id=#{categoryId}
+    </delete>
+</mapper>

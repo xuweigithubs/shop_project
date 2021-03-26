@@ -38,6 +38,30 @@
         </where>
         limit #{pager.startIndex},#{pager.pageSize}
     </select>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.spec.params.vo.SpecParamVO" >
+        select
+        spec_parm.id,
+        spec_parm.cid,
+        spec_parm.group_id as groupId,
+        spec_parm.name,
+        numberic,
+        unit,
+        generic,
+        searching,
+        segments
+        from tb_spec_param spec_parm
+        <where>
+            <if test="name!='' and  name!=null">
+                spec_parm.name like concat('%',#{name,jdbcType=VARCHAR},'%')
+            </if>
+            <if test="cid!='' and cid!=null">
+                spec_parm.cid=#{cid,jdbcType=VARCHAR}
+            </if>
+            <if test="cid!='' and cid!=null">
+                spec_parm.cid=#{cid,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
     <select id="selectByConditionCount" resultType="int" parameterType="manager.spec.params.vo.SpecParamVO" >
         select count(1)
         from tb_spec_param
@@ -79,7 +103,7 @@
         </foreach>
     </delete>
     <delete id="updateParamByIds" parameterType="int">
-        update  tb_spec_param t
+        update tb_spec_param t
         set t.group_id=#{groupId}
         where id IN
         <foreach collection="specParamIds" item="id" open="(" separator="," close=")">
@@ -88,12 +112,12 @@
     </delete>
     <update id="updateParam" parameterType="manager.spec.params.vo.SpecParamVO" >
         update tb_spec_param t
-               set t.name=#{name},
-                   t.numberic=#{numberic},
-                   t.unit=#{unit},
-                   t.generic=#{generic},
-                   t.searching=#{searching},
-                   t.segments=#{segments}
+           set t.name=#{name},
+               t.numberic=#{numberic},
+               t.unit=#{unit},
+               t.generic=#{generic},
+               t.searching=#{searching},
+               t.segments=#{segments}
          where t.id=#{id}
     </update>
 </mapper>

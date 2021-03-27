@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface SpecificationDao {
     //根据名称搜索参数组
-    List<SpecGroupVO> selectByCondition(SpecificationVO specificationVO);
+    List<SpecificationVO> selectByCondition(SpecificationVO specificationVO);
     //添加分组
     void add(SpecificationVO specificationVO);
     //修改分组

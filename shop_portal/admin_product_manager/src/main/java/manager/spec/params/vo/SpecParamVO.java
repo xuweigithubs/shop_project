@@ -20,4 +20,5 @@ public class SpecParamVO {
     private Pager pager;
     private Integer[] specParamIds;
     private List<String> groupIds;
+    private List<String> ids;
 }

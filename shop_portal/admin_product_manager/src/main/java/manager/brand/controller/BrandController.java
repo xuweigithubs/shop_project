@@ -30,6 +30,11 @@ public class BrandController {
         pageVO.setTotal(brandService.selectByConditionCount(brandVO));
         return pageVO;
     }
+    @RequestMapping(value = "/brand/list", method = RequestMethod.POST)
+    @ApiOperation(notes = "分页获取品牌信息", value = "query brand")
+    public List<BrandVO> selectByCondition(@RequestBody BrandVO brandVO){
+        return brandService.selectByCondition(brandVO);
+    }
     //添加品牌
     @RequestMapping(value = "/brand/add", method = RequestMethod.POST)
     @ApiOperation(notes = "分页获取品牌信息", value = "query brand")

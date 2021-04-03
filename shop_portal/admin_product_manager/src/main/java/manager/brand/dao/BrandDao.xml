@@ -12,18 +12,12 @@
         <result column="categoryId" property="categoryId" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
-        select id, name, image,letter
-        from tb_brand
-        <if test="name!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
-        <if test="letter!=''">
-            <where>
-                name like concat('%',#{name,jdbcType=VARCHAR},'%')
-            </where>
-        </if>
+        select brand.id, brand.name
+            from tb_brand brand
+            inner join
+            tb_category_brand category_brand
+            on brand.id=category_brand.brand_id
+            where category_brand.category_id=#{cid,jdbcType=VARCHAR}
     </select>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
         select id, name, image,letter

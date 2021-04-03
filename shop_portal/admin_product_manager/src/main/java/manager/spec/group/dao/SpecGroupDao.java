@@ -1,6 +1,7 @@
 package manager.spec.group.dao;
 
 import manager.spec.group.vo.SpecGroupVO;
+import manager.spec.group.vo.SpecificationVO;
 
 import java.util.List;
 
@@ -19,6 +20,6 @@ public interface SpecGroupDao {
     void deleteSpecGroupByCondition(SpecGroupVO specGroupVO);
     //统计查询结果的条数
     Integer selectByConditionCount(SpecGroupVO specGroupVO);
-
+    //批量添加规格参数组
     void addSpecGroupBatch(List<SpecGroupVO> addSpecGroupBatch);
 }

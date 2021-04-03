@@ -10,10 +10,8 @@ import manager.spec.params.service.ParamService;
 import manager.spec.params.vo.SpecParamVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 import java.util.stream.Collectors;
 @Service(value = "paramService")
 public class ParamServiceImpl implements ParamService {
@@ -60,6 +58,12 @@ public class ParamServiceImpl implements ParamService {
         //更新完规格参数后，需要同步更新规格参数模板
         paramDao.updateParamByIds(specParamVO);
         saveParamTemplate(specParamVO);
+    }
+
+    @Override
+    public List<SpecificationVO> getParamsTemplate(SpecificationVO specificationVO) {
+        List<SpecificationVO> categorySpecGroupList=specificationDao.selectByCondition(specificationVO);
+        return categorySpecGroupList;
     }
 
     private void saveParamTemplate(SpecParamVO specParamVO) {

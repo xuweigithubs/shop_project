@@ -3,6 +3,7 @@ package manager.spec.params.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import manager.common.PageView;
+import manager.spec.group.vo.SpecificationVO;
 import manager.spec.params.service.ParamService;
 import manager.spec.params.vo.SpecParamVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = {"/manager"})
@@ -47,5 +49,12 @@ public class ParamController {
     @ApiOperation(notes = "修改规格参数", value = "delete params info")
     public void updateByIds(@RequestBody SpecParamVO specParamVO){
         paramService.updateParamByIds(specParamVO);
+    }
+    //返回规格参数模板Map对象
+    @RequestMapping(value = "/spec/params/getTemplateByCid", method = RequestMethod.POST)
+    @ApiOperation(notes = "修改规格参数", value = "delete params info")
+    public List<SpecificationVO> getParamsTemplate(@RequestBody SpecificationVO specificationVO){
+       return paramService.getParamsTemplate(specificationVO);
+
     }
 }

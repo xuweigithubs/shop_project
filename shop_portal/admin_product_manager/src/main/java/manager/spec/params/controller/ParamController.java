@@ -55,6 +55,5 @@ public class ParamController {
     @ApiOperation(notes = "修改规格参数", value = "delete params info")
     public List<SpecificationVO> getParamsTemplate(@RequestBody SpecificationVO specificationVO){
        return paramService.getParamsTemplate(specificationVO);
-
     }
 }

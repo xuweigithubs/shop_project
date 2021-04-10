@@ -62,6 +62,9 @@ public class ParamServiceImpl implements ParamService {
 
     @Override
     public List<SpecificationVO> getParamsTemplate(SpecificationVO specificationVO) {
+        if(null==specificationVO.getCategoryId()||"".equals(specificationVO.getCategoryId())){
+            return new ArrayList<SpecificationVO>();
+        }
         List<SpecificationVO> categorySpecGroupList=specificationDao.selectByCondition(specificationVO);
         return categorySpecGroupList;
     }

@@ -68,7 +68,7 @@
         insert into tb_spu(
             id,
             title,
-            sub_title
+            sub_title,
             cid1,
             cid2,
             cid3,
@@ -84,11 +84,11 @@
                 #{cid1},
                 #{cid2},
                 #{cid3},
-                #{brand_id},
+                #{brandId},
                 #{saleable},
                 #{valid},
-                #{create_time},
-                #{last_update_time}
+                #{createTime},
+                #{lastUpdateTime}
            )
     </insert>
     <delete id="deleteSpus" parameterType="java.util.List">

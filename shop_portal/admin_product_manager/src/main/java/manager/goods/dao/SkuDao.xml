@@ -46,6 +46,7 @@
     <!--批量保存sku信息-->
     <insert id="saveSkus" parameterType="java.util.List">
         insert into tb_sku(
+            id,
             spu_id,
             title,
             images,
@@ -58,11 +59,13 @@
         ) values
         <foreach collection ="list" item="skuItem" index= "index" separator =",">
           (
-                #{skuItem.spu_id},
+                #{skuItem.id},
+                #{skuItem.spuId},
                 #{skuItem.title},
                 #{skuItem.images},
+                #{skuItem.price},
                 #{skuItem.indexes},
-                #{skuItem.own_spec},
+                #{skuItem.ownSpec},
                 #{skuItem.enable},
                 #{skuItem.createTime},
                 #{skuItem.lastUpdateTime}

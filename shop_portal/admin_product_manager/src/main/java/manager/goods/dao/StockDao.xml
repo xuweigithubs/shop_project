@@ -3,15 +3,15 @@
 <mapper namespace="manager.goods.dao.StockDao" >
     <resultMap id="BaseResultMap" type="manager.goods.vo.StockVO">
         <id column="skuId" property="skuId" jdbcType="VARCHAR" />
-        <id column="secKillStock" property="secKillStock" jdbcType="VARCHAR" />
-        <id column="secKillTotal" property="secKillTotal" jdbcType="VARCHAR" />
+        <id column="seckillStock" property="seckillStock" jdbcType="VARCHAR" />
+        <id column="seckillTotal" property="seckillTotal" jdbcType="VARCHAR" />
         <id column="stock" property="stock" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.goods.vo.StockVO" >
         select
             sku_id as skuId,
-            seckill_stock as secKillStock,
-            seckill_total as secKillTotal,
+            seckill_stock as seckillStock,
+            seckill_total as seckillTotal,
             stock
             from tb_stock stock
             where sku_id IN
@@ -28,9 +28,9 @@
         ) values
         <foreach collection ="list" item="stockItem" index= "index" separator =",">
              (
-                #{stockItem.sku_id},
-                #{stockItem.seckill_stock},
-                #{stockItem.seckill_total},
+                #{stockItem.skuId},
+                #{stockItem.seckillStock},
+                #{stockItem.seckillTotal},
                 #{stockItem.stock}
                )
         </foreach>

@@ -3,11 +3,11 @@
 <mapper namespace="manager.goods.dao.SpuDetialDao" >
     <resultMap id="BaseResultMap" type="manager.goods.vo.SpuDetialVO" >
         <id column="spuId" property="spuId" jdbcType="VARCHAR" />
-        <id column="description" property="description" jdbcType="VARCHAR" />
+        <id column="description" property="description" jdbcType="LONGNVARCHAR" />
         <id column="specifications" property="specifications" jdbcType="VARCHAR" />
-        <id column="spec_template" property="spec_template" jdbcType="VARCHAR" />
-        <id column="packing_list" property="packing_list" jdbcType="VARCHAR" />
-        <id column="after_service" property="after_service" jdbcType="VARCHAR" />
+        <id column="spec_template" property="specTemplate" jdbcType="VARCHAR" />
+        <id column="packing_list" property="packingList" jdbcType="VARCHAR" />
+        <id column="after_service" property="afterService" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectBySupIds" resultMap="BaseResultMap" parameterType="java.util.List">
         select
@@ -29,8 +29,8 @@
             description,
             specifications,
             spec_template,
-            packing_list as packingList,
-            after_service as afterService
+            packing_list,
+            after_service
         ) values (
             #{spuId},
             #{description},

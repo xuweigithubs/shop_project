@@ -1,5 +1,7 @@
 package manager.goods.vo;
 import lombok.Data;
+import manager.common.Pager;
+
 import java.util.Date;
 import java.util.List;
 
@@ -18,4 +20,5 @@ public class SpuVO {
     private Date lastUpdateTime;
     private SpuDetialVO spuDetialVO;
     private List<SkuVO> skus;
+    private Pager pager;
 }

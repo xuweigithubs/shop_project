@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.goods.dao.SpuDetialDao" >
+    <resultMap id="BaseResultMap" type="manager.goods.vo.SpuDetialVO" >
+        <id column="spuId" property="spuId" jdbcType="VARCHAR" />
+        <id column="description" property="description" jdbcType="VARCHAR" />
+        <id column="specifications" property="specifications" jdbcType="VARCHAR" />
+        <id column="spec_template" property="spec_template" jdbcType="VARCHAR" />
+        <id column="packing_list" property="packing_list" jdbcType="VARCHAR" />
+        <id column="after_service" property="after_service" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectBySupIds" resultMap="BaseResultMap" parameterType="java.util.List">
+        select
+            spu_detail.spu_id as spuId,
+            spu_detail.description,
+            spu_detail.specifications,
+            spu_detail.spec_template,
+            spu_detail.packing_list as packingList,
+            spu_detail.after_service as afterService
+            from tb_spu_detail spu_detail
+            where spu_id IN
+            <foreach collection="array" item="id" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+    </select>
+    <insert id="saveSpuDetial">
+        insert into tb_spu_detail(
+            spu_id,
+            description,
+            specifications,
+            spec_template,
+            packing_list as packingList,
+            after_service as afterService
+        ) values (
+            #{spuId},
+            #{description},
+            #{specifications},
+            #{specTemplate},
+            #{packingList},
+            #{afterService}
+        )
+    </insert>
+    <!--删除spu详细信息-->
+    <delete id="deleteySupIds" parameterType="java.util.List">
+        delete from tb_spu_detail
+        where spu_id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <update id="updateSpuDetial" parameterType="manager.goods.vo.SpuDetialVO" >
+        update tb_spu_detail spu_detail
+           set
+            spu_detail.description=#{description},
+            spu_detail.specifications=#{specifications},
+            spu_detail.spec_template=#{specTemplate},
+            spu_detail.packing_list=#{packingList},
+            spu_detail.after_service=#{afterService}
+         where t.spu_Id=#{spuId}
+    </update>
+</mapper>

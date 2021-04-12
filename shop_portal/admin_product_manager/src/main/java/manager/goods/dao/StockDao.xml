@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.goods.dao.StockDao" >
+    <resultMap id="BaseResultMap" type="manager.goods.vo.StockVO">
+        <id column="skuId" property="skuId" jdbcType="VARCHAR" />
+        <id column="secKillStock" property="secKillStock" jdbcType="VARCHAR" />
+        <id column="secKillTotal" property="secKillTotal" jdbcType="VARCHAR" />
+        <id column="stock" property="stock" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.goods.vo.StockVO" >
+        select
+            sku_id as skuId,
+            seckill_stock as secKillStock,
+            seckill_total as secKillTotal,
+            stock
+            from tb_stock stock
+            where sku_id IN
+            <foreach collection="array" item="id" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+    </select>
+    <insert id="saveStocks">
+        insert into tb_stock(
+            sku_id,
+            seckill_stock,
+            seckill_total,
+            stock
+        ) values
+        <foreach collection ="list" item="stockItem" index= "index" separator =",">
+             (
+                #{stockItem.sku_id},
+                #{stockItem.seckill_stock},
+                #{stockItem.seckill_total},
+                #{stockItem.stock}
+               )
+        </foreach>
+    </insert>
+    <delete id="deleteStock" parameterType="int">
+        delete from tb_stock
+        where sku_id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <update id="updateStock" parameterType="manager.goods.vo.StockVO" >
+        update tb_stock t
+           set t.stock=#{stock}
+           where t.sku_id=#{skuId}
+    </update>
+</mapper>

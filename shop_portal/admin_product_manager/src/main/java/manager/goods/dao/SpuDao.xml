@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.goods.dao.SpuDao" >
+    <resultMap id="BaseResultMap" type="manager.goods.vo.SpuVO" >
+        <id column="id" property="id" jdbcType="VARCHAR" />
+        <id column="title" property="title" jdbcType="VARCHAR" />
+        <id column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+        <result column="cid1" property="cid1" jdbcType="VARCHAR" />
+        <result column="cid2" property="cid2" jdbcType="VARCHAR" />
+        <result column="cid3" property="cid3" jdbcType="TINYINT" />
+        <result column="brandId" property="brandId" jdbcType="VARCHAR" />
+        <result column="saleable" property="saleable" jdbcType="TINYINT" />
+        <result column="valid" property="valid" jdbcType="TINYINT" />
+        <result column="createTime" property="createTime" jdbcType="DATE" />
+        <result column="lastUpdateTime" property="lastUpdateTime" jdbcType="DATE" />
+    </resultMap>
+    <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.goods.vo.SpuVO" >
+        select
+            spu.id,
+            spu.title,
+            spu.sub_title as subTitle,
+            spu.cid1,
+            spu.cid2,
+            spu.cid3,
+            spu.brand_id as brandId,
+            spu.saleable,
+            spu.valid,
+            spu.create_time as createTime,
+            spu.last_update_time as lastUpdateTime
+        from tb_spu spu
+        <where>
+            <if test="title!='' and  title!=null">
+                spu.title like concat('%',#{title,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+        limit #{pager.startIndex},#{pager.pageSize}
+    </select>
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.goods.vo.SpuVO" >
+            select
+                spu.id,
+                spu.title,
+                spu.sub_title as subTitle,
+                spu.cid1,
+                spu.cid2,
+                spu.cid3,
+                spu.brand_id as brandId,
+                spu.saleable,
+                spu.valid,
+                spu.create_time as createTime,
+                spu.last_update_time as lastUpdateTime
+        from tb_spu spu
+        <where>
+            <if test="title!='' and  title!=null">
+                spu.title like concat('%',#{title,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+    </select>
+    <select id="selectByConditionCount" resultType="int" parameterType="manager.goods.vo.SpuVO" >
+        select count(1)
+        from tb_spu
+        <where>
+            <if test="title!='' and title!=null">
+                title like concat('%',#{title,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+    </select>
+    <insert id="saveSpu">
+        insert into tb_spu(
+            id,
+            title,
+            sub_title
+            cid1,
+            cid2,
+            cid3,
+            brand_id,
+            saleable,
+            valid,
+            create_time,
+            last_update_time
+        ) values (
+                #{id},
+                #{title},
+                #{subTitle},
+                #{cid1},
+                #{cid2},
+                #{cid3},
+                #{brand_id},
+                #{saleable},
+                #{valid},
+                #{create_time},
+                #{last_update_time}
+           )
+    </insert>
+    <delete id="deleteSpus" parameterType="java.util.List">
+        delete from tb_spu
+        where id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <update id="updateSpu" parameterType="manager.goods.vo.SpuVO" >
+        update tb_spu t
+                set
+                t.title=#{title},
+                t.sub_title=#{subTitle}
+                t.cid1=#{cid1},
+                t.cid2=#{cid2},
+                t.cid3=#{cid3},
+                t.brand_id=#{brandId},
+                t.saleable=#{saleable},
+                t.valid=#{valid},
+         where t.id=#{id}
+    </update>
+</mapper>

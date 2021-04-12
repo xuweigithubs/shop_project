@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manager.goods.dao.SkuDao" >
+    <resultMap id="BaseResultMap" type="manager.goods.vo.SkuVO" >
+        <id column="id" property="id" jdbcType="VARCHAR" />
+        <id column="spuId" property="spuId" jdbcType="VARCHAR" />
+        <id column="title" property="title" jdbcType="VARCHAR" />
+        <id column="images" property="images" jdbcType="VARCHAR" />
+        <id column="price" property="price" jdbcType="VARCHAR" />
+        <id column="indexes" property="indexes" jdbcType="VARCHAR" />
+        <id column="ownSpec" property="ownSpec" jdbcType="VARCHAR" />
+        <id column="enable" property="enable" jdbcType="VARCHAR" />
+        <id column="createTime" property="createTime" jdbcType="DATE" />
+        <id column="lastUpdateTime" property="lastUpdateTime" jdbcType="DATE" />
+    </resultMap>
+    <!--根据条件不分页查询sku信息-->
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.goods.vo.SkuVO" >
+        select
+        sku.id,
+        sku.spu_id as spuId,
+        sku.title,
+        sku.images,
+        sku.price,
+        sku.indexes,
+        sku.own_spec,
+        sku.enable,
+        sku.create_time as createTime,
+        sku.last_update_time as lastUpdateTime
+        from tb_sku sku
+        <where>
+            <if test="title!='' and  title!=null">
+                sku.title like concat('%',#{title,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+    </select>
+    <!--统计sku的数量-->
+    <select id="selectByConditionCount" resultType="int" parameterType="manager.goods.vo.SkuVO" >
+        select count(1)
+        from sku
+        <where>
+            <if test="title!='' and title!=null">
+                    title like concat('%',#{title,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+    </select>
+    <!--批量保存sku信息-->
+    <insert id="saveSkus" parameterType="java.util.List">
+        insert into tb_sku(
+            spu_id,
+            title,
+            images,
+            price,
+            indexes,
+            own_spec,
+            enable,
+            create_time,
+            last_update_time
+        ) values
+        <foreach collection ="list" item="skuItem" index= "index" separator =",">
+          (
+                #{skuItem.spu_id},
+                #{skuItem.title},
+                #{skuItem.images},
+                #{skuItem.indexes},
+                #{skuItem.own_spec},
+                #{skuItem.enable},
+                #{skuItem.createTime},
+                #{skuItem.lastUpdateTime}
+           )
+        </foreach>
+    </insert>
+    <!--根据skuId删除spu信息-->
+    <delete id="deleteSkuBySpuId" parameterType="int">
+        delete from tb_sku sku
+        where sku.spu_id=#{id}
+    </delete>
+</mapper>

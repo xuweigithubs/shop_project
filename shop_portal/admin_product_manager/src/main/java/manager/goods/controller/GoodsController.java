@@ -5,8 +5,6 @@ import io.swagger.annotations.ApiOperation;
 import manager.common.PageView;
 import manager.goods.service.GoodsService;
 import manager.goods.vo.SpuVO;
-import manager.spec.group.service.ParamGroupService;
-import manager.spec.group.vo.SpecGroupVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

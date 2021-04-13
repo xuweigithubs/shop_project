@@ -4,6 +4,7 @@ import java.util.List;
 @Data
 public class CategoryVO {
     private String id;
+    private Object[] ids;
     private String parentId;
     private String name;
     private boolean isParent;

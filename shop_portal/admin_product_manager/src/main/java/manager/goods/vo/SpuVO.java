@@ -21,4 +21,6 @@ public class SpuVO {
     private SpuDetialVO spuDetialVO;
     private List<SkuVO> skus;
     private Pager pager;
+    private String categoryName;
+    private String brandName;
 }

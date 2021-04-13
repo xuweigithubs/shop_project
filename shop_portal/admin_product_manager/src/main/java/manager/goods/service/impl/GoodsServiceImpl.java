@@ -1,5 +1,9 @@
 package manager.goods.service.impl;
 import common.SnowflakeIdWorker;
+import manager.brand.dao.BrandDao;
+import manager.brand.vo.BrandVO;
+import manager.categories.dao.CategoryDao;
+import manager.categories.vo.CategoryVO;
 import manager.common.PageView;
 import manager.goods.dao.SkuDao;
 import manager.goods.dao.SpuDao;
@@ -14,9 +18,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
 @Service(value = "goodsService")
 public class GoodsServiceImpl implements GoodsService {
     @Autowired
@@ -27,11 +31,45 @@ public class GoodsServiceImpl implements GoodsService {
     private SpuDetialDao spuDetialDao;
     @Autowired
     private StockDao stockDao;
+    @Autowired
+    private CategoryDao categoryDao;
+    @Autowired
+    private BrandDao brandDao;
     @Override
     public PageView<List<SpuVO>> selectByConditionPage(SpuVO spuVO) {
         PageView<List<SpuVO>> pageVO=new PageView<List<SpuVO>>();
         List<SpuVO> spus=spuDao.selectByConditionPage(spuVO);
+        //组装分类数据
+        List<String> categoryIds= spus.stream().map(SpuVO::getCid3).distinct().collect(Collectors.toList());
+        List<String> brandIds=spus.stream().map(SpuVO::getBrandId).distinct().collect(Collectors.toList());
+        //查询分类和品牌
+        CategoryVO spuVOCondition=new CategoryVO();
+        Object[] ids=  categoryIds.toArray();
+        Object[] brands=  brandIds.toArray();
+        spuVOCondition.setIds(ids);
+        List<CategoryVO> categories=categoryDao.selectByCondition(spuVOCondition);
+        BrandVO brandVO=new BrandVO();
+        brandVO.setIds(brands);
+        List<BrandVO> brandResults=brandDao.selectByIds(brandVO);
+        //将结果转成map
+        //获取品牌信息
         int count=spuDao.selectByConditionCount(spuVO);
+        Map categoryMap=new HashMap();
+        Map brandMap=new HashMap();
+        categories.forEach(item->{
+            categoryMap.put(item.getId(),item.getName());
+        });
+        brandResults.forEach(item->{
+            brandMap.put(item.getId(),item.getName());
+        });
+        spus.forEach(item->{
+             if(null!=categoryMap.get(item.getCid3())){
+                 item.setCategoryName(categoryMap.get(item.getCid3()).toString());
+             }
+             if(null!=brandMap.get(item.getBrandId())){
+                 item.setBrandName(brandMap.get(item.getBrandId()).toString());
+             }
+        });
         pageVO.setRows(spus);
         pageVO.setTotal(count);
         return pageVO;
@@ -39,7 +77,6 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public List<SpuVO> selectByCondition(SpuVO spuVO) {
-
         return null;
     }
     @Transactional
@@ -57,9 +94,9 @@ public class GoodsServiceImpl implements GoodsService {
          spuDetialVO.setSpuId(spuStrId);
          spuDetialDao.saveSpuDetial(spuVO.getSpuDetialVO());
         //保存sku信息
-        List<SkuVO> skus=spuVO.getSkus();
-        List<StockVO> stocks=new ArrayList<StockVO>();
-        skus.forEach(item->{
+         List<SkuVO> skus=spuVO.getSkus();
+         List<StockVO> stocks=new ArrayList<StockVO>();
+         skus.forEach(item->{
              item.setCreateTime(new Date());
              item.setLastUpdateTime(new Date());
              String skuId=String.valueOf(idWorker.nextId());
@@ -77,12 +114,10 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public void updateGood(SpuVO spuVO) {
-
     }
 
     @Override
     public void deleteGoods(Integer[] ids) {
-
     }
 
 }

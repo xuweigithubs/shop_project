@@ -19,6 +19,14 @@
             on brand.id=category_brand.brand_id
             where category_brand.category_id=#{cid,jdbcType=VARCHAR}
     </select>
+    <select id="selectByIds" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
+        select brand.id, brand.name
+        from tb_brand brand
+        where brand.id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
     <select id="selectByConditionPage" resultMap="BaseResultMap" parameterType="manager.brand.vo.BrandVO" >
         select id, name, image,letter
         from tb_brand

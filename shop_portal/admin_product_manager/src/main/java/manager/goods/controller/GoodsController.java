@@ -30,6 +30,16 @@ public class GoodsController {
     public void save(@RequestBody SpuVO spuVO){
         goodsService.addGood(spuVO);
     }
+    @RequestMapping(value = "/goods/delete", method = RequestMethod.POST)
+    @ApiOperation(notes = "保存Spu信息", value = "save goods info")
+    public void delete(@RequestBody List<String> ids){
+        goodsService.deleteGoods(ids);
+    }
+    @RequestMapping(value = "/goods/update", method = RequestMethod.POST)
+    @ApiOperation(notes = "保存Spu信息", value = "save goods info")
+    public void update(@RequestBody SpuVO spuVO){
+        goodsService.updateGood(spuVO);
+    }
     //按条件查询数据
     @RequestMapping(value = "/goods/single", method = RequestMethod.POST)
     @ApiOperation(notes = "分页获取规格参数信息", value = "get goods info")

@@ -135,13 +135,59 @@ public class GoodsServiceImpl implements GoodsService {
          skuDao.saveSkus(skus);
          stockDao.saveStocks(stocks);
     }
-
+    //修改商品信息
+    @Transactional
     @Override
     public void updateGood(SpuVO spuVO) {
+        spuVO.setLastUpdateTime(new Date());
+        spuDao.updateSpu(spuVO);
+        SpuDetialVO spuDetialVO=spuVO.getSpuDetialVO();
+        spuDetialVO.setSpuId(spuVO.getId());
+        spuDetialDao.updateSpuDetial(spuDetialVO);
+        //删除sku
+        SkuVO skuVO=new SkuVO();
+        skuVO.setSpuId(spuVO.getId());
+        List<SkuVO> skuList=skuDao.selectByCondition(skuVO);
+        List<String> skuIds=skuList.stream().map(SkuVO::getId).collect(Collectors.toList());
+        SkuVO newSkuVO=new SkuVO();
+        newSkuVO.setSpuId(spuVO.getId());
+        skuDao.deleteSkuBySpuId(newSkuVO);
+        stockDao.deleteStock(skuIds);
+        //删除库存
+        List<SkuVO> skus=spuVO.getSkus();
+        List<StockVO> stocks=new ArrayList<StockVO>();
+        SnowflakeIdWorker idWorker = new SnowflakeIdWorker(0, 0);
+        skus.forEach(item->{
+            item.setCreateTime(new Date());
+            item.setLastUpdateTime(new Date());
+            String skuId=String.valueOf(idWorker.nextId());
+            item.setId(skuId);
+            item.setSpuId(spuVO.getId());
+            StockVO stockVO=item.getStockVO();
+            stockVO.setSkuId(skuId);
+            stockVO.setSeckillStock("0");
+            stockVO.setSeckillTotal("0");
+            stocks.add(stockVO);
+        });
+        skuDao.saveSkus(skus);
+        stockDao.saveStocks(stocks);
     }
-
+    @Transactional
     @Override
-    public void deleteGoods(Integer[] ids) {
+    public void deleteGoods(List<String> ids) {
+        //删除spu
+        spuDao.deleteSpus(ids);
+        //删除spu详情
+        spuDetialDao.deleteySupIds(ids);
+        //根据spu查询sku
+        SkuVO skuVO=new SkuVO();
+        skuVO.setSpuIds(ids);
+        List<SkuVO> skus=skuDao.selectByCondition(skuVO);
+        List<String> idsList=skus.stream().map(SkuVO::getId).collect(Collectors.toList());
+        if(idsList.size()>0){
+            skuDao.deleteSkuBySkuIds(idsList);
+            stockDao.deleteStock(idsList);
+        }
     }
 
 }

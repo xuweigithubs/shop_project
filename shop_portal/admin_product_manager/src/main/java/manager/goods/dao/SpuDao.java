@@ -15,7 +15,7 @@ public interface SpuDao {
     //保存Spu信息
     void saveSpu(SpuVO spuVO);
     //根据id删除spu
-    void deleteSpus(Integer[] ids);
+    void deleteSpus(List<String> ids);
     //修改spu信息
     void updateSpu(SpuVO spuVO);
 

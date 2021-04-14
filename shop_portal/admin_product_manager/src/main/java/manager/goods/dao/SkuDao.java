@@ -12,6 +12,7 @@ public interface SkuDao {
     //保存参数
     void saveSkus(List<SkuVO> skus);
     //删除Sku信息
-    void deleteSkuBySpuId(Integer[] ids);
-
+    void deleteSkuBySpuId(SkuVO skuVO);
+    //删除sku信息
+    void deleteSkuBySkuIds(List<String> ids);
 }

@@ -16,5 +16,5 @@ public interface GoodsService{
     //根据ID修改参数组
     public void updateGood(SpuVO spuVO);
     //删除参数组
-    public void deleteGoods(Integer[] ids);
+    public void deleteGoods(List<String> ids);
 }

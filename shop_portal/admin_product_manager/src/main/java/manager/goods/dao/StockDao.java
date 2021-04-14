@@ -7,7 +7,7 @@ public interface StockDao {
     //批量保存库存信息
     void saveStocks(List<StockVO> stockVOList);
     //根据SpuId删除库存信息
-    void deleteStock(StockVO stockVO);
+    void deleteStock(List<String> ids);
     //更新库存信息
     void updateStock(StockVO stockVO);
 }

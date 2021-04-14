@@ -11,7 +11,7 @@ public interface SpuDetialDao {
     //保存Spu详细信息
     void saveSpuDetial(SpuDetialVO spuDetialVO);
     //删除Spu详细信息
-    List<SpuDetialVO> deleteySupIds(Long[] spuIds);
+    void deleteySupIds(List<String> spuIds);
     //修改Spu详细信息
     void updateSpuDetial(SpuDetialVO spuDetialVO);
 

@@ -33,6 +33,7 @@
                 spu.title like concat('%',#{title,jdbcType=VARCHAR},'%')
             </if>
         </where>
+        order by spu.last_update_time desc
         limit #{pager.startIndex},#{pager.pageSize}
     </select>
     <select id="selectByCondition" resultMap="BaseResultMap" parameterType="manager.goods.vo.SpuVO" >
@@ -97,7 +98,7 @@
     <delete id="deleteSpus" parameterType="java.util.List">
         delete from tb_spu
         where id IN
-        <foreach collection="array" item="id" open="(" separator="," close=")">
+        <foreach collection="list" item="id" open="(" separator="," close=")">
             #{id}
         </foreach>
     </delete>
@@ -105,13 +106,14 @@
         update tb_spu t
                 set
                 t.title=#{title},
-                t.sub_title=#{subTitle}
+                t.sub_title=#{subTitle},
                 t.cid1=#{cid1},
                 t.cid2=#{cid2},
                 t.cid3=#{cid3},
                 t.brand_id=#{brandId},
                 t.saleable=#{saleable},
                 t.valid=#{valid},
+                t.last_update_time=#{lastUpdateTime}
          where t.id=#{id}
     </update>
 </mapper>

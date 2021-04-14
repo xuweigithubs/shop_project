@@ -1,4 +1,5 @@
 package manager.goods.service.impl;
+
 import common.SnowflakeIdWorker;
 import manager.brand.dao.BrandDao;
 import manager.brand.vo.BrandVO;
@@ -76,8 +77,31 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<SpuVO> selectByCondition(SpuVO spuVO) {
-        return null;
+    public SpuVO selectByCondition(SpuVO spuVO) {
+         List<SpuVO> spus=spuDao.selectByCondition(spuVO);
+         SpuVO spu=spus.get(0);
+         Long spuIds[]=new Long[1];
+         spuIds[0]=Long.valueOf(spu.getId());
+         List<SpuDetialVO> spuDetials=spuDetialDao.selectBySupIds(spuIds);
+         SpuDetialVO spuDetialVO=spuDetials.get(0);
+         spu.setSpuDetialVO(spuDetialVO);
+        //查询sku信息
+         SkuVO skuVO=new SkuVO();
+         skuVO.setSpuId(spu.getId());
+         List<SkuVO> skus=skuDao.selectByCondition(skuVO);
+         //查询库存信息
+         Object skuIds[]=skus.stream().map(SkuVO::getId).toArray();
+         StockVO stockVO=new StockVO();
+         stockVO.setSkuIds(skuIds);
+         List<StockVO> stocks=stockDao.selectByCondition(stockVO);
+         Map<String,StockVO> stockMap=stocks.stream().collect(Collectors.toMap(StockVO::getSkuId,StockVO->StockVO));
+         skus.forEach(item->{
+             if(null!=stockMap.get(item.getId())){
+                 item.setStockVO(stockMap.get(item.getId()));
+             }
+         });
+         spu.setSkus(skus);
+         return spu;
     }
     @Transactional
     @Override

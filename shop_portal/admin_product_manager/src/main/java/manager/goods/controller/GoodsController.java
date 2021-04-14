@@ -30,4 +30,10 @@ public class GoodsController {
     public void save(@RequestBody SpuVO spuVO){
         goodsService.addGood(spuVO);
     }
+    //按条件查询数据
+    @RequestMapping(value = "/goods/single", method = RequestMethod.POST)
+    @ApiOperation(notes = "分页获取规格参数信息", value = "get goods info")
+    public SpuVO selectBySingle(@RequestBody SpuVO spuVO){
+        return goodsService.selectByCondition(spuVO);
+    }
 }

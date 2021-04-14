@@ -6,8 +6,8 @@
         <id column="description" property="description" jdbcType="LONGNVARCHAR" />
         <id column="specifications" property="specifications" jdbcType="VARCHAR" />
         <id column="spec_template" property="specTemplate" jdbcType="VARCHAR" />
-        <id column="packing_list" property="packingList" jdbcType="VARCHAR" />
-        <id column="after_service" property="afterService" jdbcType="VARCHAR" />
+        <id column="packingList" property="packingList" jdbcType="VARCHAR" />
+        <id column="afterService" property="afterService" jdbcType="VARCHAR" />
     </resultMap>
     <select id="selectBySupIds" resultMap="BaseResultMap" parameterType="java.util.List">
         select

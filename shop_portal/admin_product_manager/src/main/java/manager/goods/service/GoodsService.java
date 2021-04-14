@@ -10,7 +10,7 @@ public interface GoodsService{
     //获取规格参数组
     public PageView<List<SpuVO>> selectByConditionPage(SpuVO spuVO);
     //不分页查询
-    public List<SpuVO> selectByCondition(SpuVO spuVO);
+    public SpuVO selectByCondition(SpuVO spuVO);
     //添加规格参数组
     public void  addGood(SpuVO spuVO);
     //根据ID修改参数组

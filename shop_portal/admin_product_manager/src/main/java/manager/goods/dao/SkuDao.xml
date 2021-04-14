@@ -31,6 +31,9 @@
             <if test="title!='' and  title!=null">
                 sku.title like concat('%',#{title,jdbcType=VARCHAR},'%')
             </if>
+            <if test="spuId!='' and  spuId!=null">
+                sku.spu_id=#{spuId,jdbcType=VARCHAR}
+            </if>
         </where>
     </select>
     <!--统计sku的数量-->
